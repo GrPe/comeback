@@ -9,7 +9,8 @@ interface
 
 uses Classes,
   CastleComponentSerialize, CastleUIControls, CastleControls,
-  CastleKeysMouse, CastleViewport, CastleScene, CastleVectors;
+  CastleKeysMouse, CastleViewport, CastleScene, CastleVectors,
+  PlayerManager;
 
 type
   { Main "playing game" view, where most of the game logic takes place. }
@@ -19,13 +20,14 @@ type
       These fields will be automatically initialized at Start. }
     LabelFps: TCastleLabel;
     MainViewport: TCastleViewport;
-    SceneDragon: TCastleScene;
+    SceneMage: TCastleScene;
     CheckboxCameraFollow: TCastleCheckbox;
   private
     { DragonFlying and DragonFlyingTarget manage currect dragon (SceneDragon)
       animation and it's movement. }
     DragonFlying: Boolean;
     DragonFlyingTarget: TVector2;
+    PlayerManager: TPlayerManager;
   public
     constructor Create(AOwner: TComponent); override;
     procedure Start; override;
@@ -52,6 +54,8 @@ end;
 procedure TViewPlay.Start;
 begin
   inherited;
+
+  PlayerManager := TPlayerManager.Create(SceneMage, SceneMage);
 end;
 
 procedure TViewPlay.Update(const SecondsPassed: Single; var HandleInput: Boolean);
@@ -67,43 +71,9 @@ begin
   Assert(LabelFps <> nil, 'If you remove LabelFps from the design, remember to remove also the assignment "LabelFps.Caption := ..." from code');
   LabelFps.Caption := 'FPS: ' + Container.Fps.ToString;
 
-  if DragonFlying then
-  begin
-    { Update SceneDragon.TranslationXY to reach DragonFlyingTarget. }
-    T := SceneDragon.TranslationXY;
-    if T.X < DragonFlyingTarget.X then
-      T.X := Min(DragonFlyingTarget.X, T.X + DragonSpeed.X * SecondsPassed)
-    else
-      T.X := Max(DragonFlyingTarget.X, T.X - DragonSpeed.X * SecondsPassed);
-    if T.Y < DragonFlyingTarget.Y then
-      T.Y := Min(DragonFlyingTarget.Y, T.Y + DragonSpeed.Y * SecondsPassed)
-    else
-      T.Y := Max(DragonFlyingTarget.Y, T.Y - DragonSpeed.Y * SecondsPassed);
-    SceneDragon.TranslationXY := T;
-
-    { Check did we reach the DragonFlyingTarget. Note that we can compare floats
-      using exact "=" operator (no need to use SameValue), because
-      our Min/Maxes above make sure that we will reach the *exact* DragonFlyingTarget
-      value. }
-    if (T.X = DragonFlyingTarget.X) and
-       (T.Y = DragonFlyingTarget.Y) then
-    begin
-      DragonFlying := false;
-      SceneDragon.PlayAnimation('idle', true);
-    end else
-    { If we're still flying then
-      update SceneDragon.Scale to reflect direction we're flying to.
-      Flipping Scale.X is an easy way to flip 2D objects. }
-    if DragonFlyingTarget.X > SceneDragon.Translation.X then
-      SceneDragon.Scale := Vector3(-1, 1, 1)
-    else
-      SceneDragon.Scale := Vector3(1, 1, 1);
-  end;
-
   if CheckboxCameraFollow.Checked then
   begin
     CamPos := MainViewport.Camera.Translation;
-    CamPos.X := SceneDragon.Translation.X;
     MainViewport.Camera.Translation := CamPos;
   end;
 end;
@@ -123,15 +93,11 @@ begin
     not handled in children controls.
   }
 
+  PlayerManager.HandleInput(Event);
+
   if Event.IsMouseButton(buttonLeft) then
   begin
-    DragonFlyingTarget := MainViewport.PositionTo2DWorld(Event.Position, true);
-    if not DragonFlying then
-    begin
-      SceneDragon.PlayAnimation('flying', true);
-      DragonFlying := true;
-    end;
-
+  
     Exit(true); // click was handled
   end;
 

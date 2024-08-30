@@ -1,14 +1,35 @@
 {
   "$$ClassName" : "TCastleUserInterface",
+  "Border" : {
+    "$$ClassName" : "TBorder"
+  },
+  "BorderColorPersistent" : {
+    "$$ClassName" : "TCastleColorPersistent"
+  },
   "FullSize" : true,
   "Name" : "RootGroup",
+  "TranslationPersistent" : {
+    "$$ClassName" : "TCastleVector2Persistent"
+  },
   "$Children" : [
     {
       "$$ClassName" : "TCastleViewport",
+      "BackgroundColorPersistent" : {
+        "$$ClassName" : "TCastleColorPersistent"
+      },
+      "Border" : {
+        "$$ClassName" : "TBorder"
+      },
+      "BorderColorPersistent" : {
+        "$$ClassName" : "TCastleColorPersistent"
+      },
       "Camera" : "Camera1",
       "FullSize" : true,
       "Items" : {
         "$$ClassName" : "TCastleRootTransform",
+        "CenterPersistent" : {
+          "$$ClassName" : "TCastleVector3Persistent"
+        },
         "PhysicsProperties" : {
           "$$ClassName" : "TPhysicsProperties",
           "LayerCollisions" : {
@@ -18,14 +39,50 @@
             "$$ClassName" : "TCastleLayerNames"
           }
         },
+        "RotationPersistent" : {
+          "$$ClassName" : "TCastleVector4RotationPersistent"
+        },
+        "ScaleOrientationPersistent" : {
+          "$$ClassName" : "TCastleVector4Persistent"
+        },
+        "ScalePersistent" : {
+          "$$ClassName" : "TCastleVector3Persistent"
+        },
+        "TranslationPersistent" : {
+          "$$ClassName" : "TCastleVector3Persistent"
+        },
         "$Children" : [
           {
             "$$ClassName" : "TCastleImageTransform",
+            "CenterPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "ColorPersistent" : {
+              "$$ClassName" : "TCastleColorPersistent"
+            },
             "Name" : "ImageBackground",
+            "PivotPersistent" : {
+              "$$ClassName" : "TCastleVector2Persistent"
+            },
+            "RepeatImagePersistent" : {
+              "$$ClassName" : "TCastleVector2Persistent"
+            },
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent"
+            },
+            "ScaleOrientationPersistent" : {
+              "$$ClassName" : "TCastleVector4Persistent"
+            },
             "ScalePersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
               "X" : 1.2000000000000000E+001,
               "Y" : 1.2000000000000000E+001
+            },
+            "ShiftPersistent" : {
+              "$$ClassName" : "TCastleVector2Persistent"
+            },
+            "SizePersistent" : {
+              "$$ClassName" : "TCastleVector2Persistent"
             },
             "TranslationPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
@@ -35,7 +92,34 @@
             "$Children" : [
               {
                 "$$ClassName" : "TCastleImageTransform",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ColorPersistent" : {
+                  "$$ClassName" : "TCastleColorPersistent"
+                },
                 "Name" : "ImageTrees",
+                "PivotPersistent" : {
+                  "$$ClassName" : "TCastleVector2Persistent"
+                },
+                "RepeatImagePersistent" : {
+                  "$$ClassName" : "TCastleVector2Persistent"
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent"
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ShiftPersistent" : {
+                  "$$ClassName" : "TCastleVector2Persistent"
+                },
+                "SizePersistent" : {
+                  "$$ClassName" : "TCastleVector2Persistent"
+                },
                 "TranslationPersistent" : {
                   "$$ClassName" : "TCastleVector3Persistent",
                   "Y" : -9.3022430419921875E+001,
@@ -46,26 +130,13 @@
             ]
           },
           {
-            "$$ClassName" : "TCastleScene",
-            "AutoAnimation" : "idle",
-            "DefaultAnimationTransition" : 1.0000000149011612E-001,
-            "ExposeTransforms" : [
-            ],
-            "Name" : "SceneDragon",
-            "ProcessEvents" : true,
-            "RenderOptions" : {
-              "$$ClassName" : "TCastleScene.TSceneRenderOptions"
-            },
-            "TranslationPersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent",
-              "X" : 1.0000000000000000E+003,
-              "Y" : 1.0000000000000000E+003,
-              "Z" : 1.0000000000000000E+002
-            },
-            "URL" : "castle-data:/dragon/dragon.json"
-          },
-          {
             "$$ClassName" : "TCastleCamera",
+            "CenterPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "GravityUpPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
             "Name" : "Camera1",
             "Orthographic" : {
               "$$ClassName" : "TCastleOrthographic",
@@ -84,6 +155,12 @@
               "$$ClassName" : "TCastleVector4RotationPersistent",
               "Z" : 1.0000000000000000E+000
             },
+            "ScaleOrientationPersistent" : {
+              "$$ClassName" : "TCastleVector4Persistent"
+            },
+            "ScalePersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
             "TranslationPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
               "Y" : 2.0000000000000000E+003,
@@ -93,6 +170,9 @@
           {
             "$$ClassName" : "TCastleScene",
             "AutoAnimation" : "idle",
+            "CenterPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
             "ExposeTransforms" : [
             ],
             "Name" : "SceneTentacles2",
@@ -100,7 +180,16 @@
             "RenderOptions" : {
               "$$ClassName" : "TCastleScene.TSceneRenderOptions",
               "MagnificationFilter" : "magNearest",
-              "MinificationFilter" : "minNearest"
+              "MinificationFilter" : "minNearest",
+              "WireframeColorPersistent" : {
+                "$$ClassName" : "TCastleColorRGBPersistent"
+              }
+            },
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent"
+            },
+            "ScaleOrientationPersistent" : {
+              "$$ClassName" : "TCastleVector4Persistent"
             },
             "ScalePersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
@@ -114,11 +203,14 @@
               "Y" : 5.8082641601562500E+002,
               "Z" : 2.0000000000000000E+001
             },
-            "URL" : "castle-data:/spritesheets/tentacles.castle-sprite-sheet"
+            "Url" : "castle-data:/spritesheets/tentacles.castle-sprite-sheet"
           },
           {
             "$$ClassName" : "TCastleScene",
             "AutoAnimation" : "idle",
+            "CenterPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
             "ExposeTransforms" : [
             ],
             "Name" : "SceneMage",
@@ -126,7 +218,16 @@
             "RenderOptions" : {
               "$$ClassName" : "TCastleScene.TSceneRenderOptions",
               "MagnificationFilter" : "magNearest",
-              "MinificationFilter" : "minNearest"
+              "MinificationFilter" : "minNearest",
+              "WireframeColorPersistent" : {
+                "$$ClassName" : "TCastleColorRGBPersistent"
+              }
+            },
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent"
+            },
+            "ScaleOrientationPersistent" : {
+              "$$ClassName" : "TCastleVector4Persistent"
             },
             "ScalePersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
@@ -140,11 +241,14 @@
               "Y" : 2.7088068847656250E+003,
               "Z" : 5.0000000000000000E+001
             },
-            "URL" : "castle-data:/spritesheets/disciple.castle-sprite-sheet"
+            "Url" : "castle-data:/spritesheets/disciple.castle-sprite-sheet"
           },
           {
             "$$ClassName" : "TCastleScene",
             "AutoAnimation" : "idle",
+            "CenterPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
             "ExposeTransforms" : [
             ],
             "Name" : "SceneTentacles1",
@@ -152,7 +256,16 @@
             "RenderOptions" : {
               "$$ClassName" : "TCastleScene.TSceneRenderOptions",
               "MagnificationFilter" : "magNearest",
-              "MinificationFilter" : "minNearest"
+              "MinificationFilter" : "minNearest",
+              "WireframeColorPersistent" : {
+                "$$ClassName" : "TCastleColorRGBPersistent"
+              }
+            },
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent"
+            },
+            "ScaleOrientationPersistent" : {
+              "$$ClassName" : "TCastleVector4Persistent"
             },
             "ScalePersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
@@ -166,13 +279,55 @@
               "Y" : 5.8082641601562500E+002,
               "Z" : 2.0000000000000000E+001
             },
-            "URL" : "castle-data:/spritesheets/tentacles.castle-sprite-sheet"
+            "Url" : "castle-data:/spritesheets/tentacles.castle-sprite-sheet"
+          },
+          {
+            "$$ClassName" : "TCastleBox",
+            "CenterPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "ColorPersistent" : {
+              "$$ClassName" : "TCastleColorPersistent"
+            },
+            "Name" : "Box1",
+            "RenderOptions" : {
+              "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+              "WireframeColorPersistent" : {
+                "$$ClassName" : "TCastleColorRGBPersistent"
+              }
+            },
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent"
+            },
+            "ScaleOrientationPersistent" : {
+              "$$ClassName" : "TCastleVector4Persistent"
+            },
+            "ScalePersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "SizePersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 1.4415274658203125E+003,
+              "Y" : 2.4217661132812500E+003
+            }
           }
         ]
       },
       "Name" : "MainViewport",
+      "TranslationPersistent" : {
+        "$$ClassName" : "TCastleVector2Persistent"
+      },
       "InternalDesignCamera" : {
         "$$ClassName" : "TCastleCamera",
+        "CenterPersistent" : {
+          "$$ClassName" : "TCastleVector3Persistent"
+        },
+        "GravityUpPersistent" : {
+          "$$ClassName" : "TCastleVector3Persistent"
+        },
         "Name" : "",
         "Orthographic" : {
           "$$ClassName" : "TCastleOrthographic",
@@ -191,6 +346,12 @@
           "$$ClassName" : "TCastleVector4RotationPersistent",
           "Z" : 1.0000000000000000E+000
         },
+        "ScaleOrientationPersistent" : {
+          "$$ClassName" : "TCastleVector4Persistent"
+        },
+        "ScalePersistent" : {
+          "$$ClassName" : "TCastleVector3Persistent"
+        },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
           "Y" : 2.0803762207031250E+003,
@@ -200,30 +361,69 @@
       "InternalDesignNavigationType" : 2,
       "InternalDesignNavigations[dnFly]" : {
         "$$ClassName" : "TCastleWalkNavigationDesign",
+        "Border" : {
+          "$$ClassName" : "TBorder"
+        },
+        "BorderColorPersistent" : {
+          "$$ClassName" : "TCastleColorPersistent"
+        },
         "Exists" : false,
-        "Name" : ""
+        "Name" : "",
+        "TranslationPersistent" : {
+          "$$ClassName" : "TCastleVector2Persistent"
+        }
       },
       "InternalDesignNavigations[dnExamine]" : {
         "$$ClassName" : "TCastleExamineNavigationDesign",
+        "Border" : {
+          "$$ClassName" : "TBorder"
+        },
+        "BorderColorPersistent" : {
+          "$$ClassName" : "TCastleColorPersistent"
+        },
         "Exists" : false,
-        "Name" : ""
+        "Name" : "",
+        "TranslationPersistent" : {
+          "$$ClassName" : "TCastleVector2Persistent"
+        }
       },
       "InternalDesignNavigations[dn2D]" : {
         "$$ClassName" : "TCastle2DNavigationDesign",
-        "Name" : ""
+        "Border" : {
+          "$$ClassName" : "TBorder"
+        },
+        "BorderColorPersistent" : {
+          "$$ClassName" : "TCastleColorPersistent"
+        },
+        "Name" : "",
+        "TranslationPersistent" : {
+          "$$ClassName" : "TCastleVector2Persistent"
+        }
       }
     },
     {
       "$$ClassName" : "TCastleLabel",
+      "Border" : {
+        "$$ClassName" : "TBorder"
+      },
+      "BorderColorPersistent" : {
+        "$$ClassName" : "TCastleColorPersistent"
+      },
       "ColorPersistent" : {
         "$$ClassName" : "TCastleColorPersistent",
         "Green" : 1.0000000000000000E+000,
         "Red" : 1.0000000000000000E+000
       },
       "FontSize" : 2.0000000000000000E+001,
+      "FrameColorPersistent" : {
+        "$$ClassName" : "TCastleColorPersistent"
+      },
       "HorizontalAnchorParent" : "hpRight",
       "HorizontalAnchorSelf" : "hpRight",
       "Name" : "LabelFps",
+      "OutlineColorPersistent" : {
+        "$$ClassName" : "TCastleColorPersistent"
+      },
       "Text" : [
         "FPS: xxx"
       ],
@@ -237,11 +437,23 @@
     },
     {
       "$$ClassName" : "TCastleCheckbox",
+      "Border" : {
+        "$$ClassName" : "TBorder"
+      },
+      "BorderColorPersistent" : {
+        "$$ClassName" : "TCastleColorPersistent"
+      },
       "Caption" : "Camera Follows Dragon",
+      "CheckboxColorPersistent" : {
+        "$$ClassName" : "TCastleColorPersistent"
+      },
       "CheckboxSize" : 5.0000000000000000E+001,
       "Checked" : true,
       "FontSize" : 4.0000000000000000E+001,
       "Name" : "CheckboxCameraFollow",
+      "TextColorPersistent" : {
+        "$$ClassName" : "TCastleColorPersistent"
+      },
       "TranslationPersistent" : {
         "$$ClassName" : "TCastleVector2Persistent",
         "X" : 4.0000000000000000E+001,

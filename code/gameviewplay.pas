@@ -53,6 +53,7 @@ procedure TViewPlay.Start;
 begin
   inherited;
   PlayerManager := TPlayerManager.Create(PlayerCharacter,PlayerCharacter,MainViewport);
+  PlayerManager.Start();
  { Collectible.Start};
   GameState.Start();
 end;
@@ -66,6 +67,7 @@ var
 begin
   inherited;
 
+  PlayerManager.Update(SecondsPassed);
   ElapsedSeconds := ElapsedSeconds - SecondsPassed;
 
   if ElapsedSeconds > 0 then Exit();

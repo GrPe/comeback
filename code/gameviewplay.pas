@@ -10,7 +10,8 @@ interface
 uses Classes,
   CastleComponentSerialize, CastleUIControls, CastleControls,
   CastleKeysMouse, CastleViewport, CastleScene, CastleVectors,
-  PlayerManager;
+  PlayerManager,Collectible, CastleLog;
+
 
 type
   { Main "playing game" view, where most of the game logic takes place. }
@@ -22,6 +23,7 @@ type
     MainViewport: TCastleViewport;
     SceneMage: TCastleScene;
     CheckboxCameraFollow: TCastleCheckbox;
+    Collectible : TCollectible;
   private
     { DragonFlying and DragonFlyingTarget manage currect dragon (SceneDragon)
       animation and it's movement. }
@@ -56,6 +58,7 @@ begin
   inherited;
 
   PlayerManager := TPlayerManager.Create(SceneMage, SceneMage);
+  Collectible.Start;
 end;
 
 procedure TViewPlay.Update(const SecondsPassed: Single; var HandleInput: Boolean);
@@ -100,6 +103,31 @@ begin
   
     Exit(true); // click was handled
   end;
+
+  if Event.IsKey(keyW) then
+  begin
+
+    Exit(true);
+  end;
+
+  if Event.IsKey(keyS) then
+  begin
+
+    Exit(true);
+  end;
+
+  if Event.IsKey(keyA) then
+  begin
+
+    Exit(true);
+  end;
+
+  if Event.IsKey(keyD) then
+  begin
+
+    Exit(true);
+  end;
+
 
   if Event.IsKey(keyF5) then
   begin

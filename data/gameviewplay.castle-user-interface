@@ -91,36 +91,6 @@
             }
           },
           {
-            "$$ClassName" : "TCastleScene",
-            "CenterPersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent"
-            },
-            "ExposeTransforms" : [
-            ],
-            "Name" : "Scene1",
-            "RenderLayer" : "rlFront",
-            "RenderOptions" : {
-              "$$ClassName" : "TCastleScene.TSceneRenderOptions",
-              "WireframeColorPersistent" : {
-                "$$ClassName" : "TCastleColorRGBPersistent"
-              }
-            },
-            "RotationPersistent" : {
-              "$$ClassName" : "TCastleVector4RotationPersistent"
-            },
-            "ScaleOrientationPersistent" : {
-              "$$ClassName" : "TCastleVector4Persistent"
-            },
-            "ScalePersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent"
-            },
-            "TranslationPersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent",
-              "Y" : 1.1883090820312500E+003
-            },
-            "Url" : "castle-data:/spritesheets/mage2.castle-sprite-sheet"
-          },
-          {
             "$$ClassName" : "TCastleTiledMap",
             "CenterPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent"
@@ -128,8 +98,7 @@
             "Name" : "TiledMapMap1Test1",
             "RenderLayer" : "rlBack",
             "RotationPersistent" : {
-              "$$ClassName" : "TCastleVector4RotationPersistent",
-              "Z" : 1.0000000000000000E+000
+              "$$ClassName" : "TCastleVector4RotationPersistent"
             },
             "ScaleOrientationPersistent" : {
               "$$ClassName" : "TCastleVector4Persistent"
@@ -141,6 +110,38 @@
               "$$ClassName" : "TCastleVector3Persistent"
             },
             "Url" : "castle-data:/Map_1/Map_1_Test.tmx"
+          },
+          {
+            "$$ClassName" : "TCastleScene",
+            "CenterPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "ExposeTransforms" : [
+            ],
+            "Name" : "PlayerCharacter",
+            "RenderLayer" : "rlFront",
+            "RenderOptions" : {
+              "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+              "WireframeColorPersistent" : {
+                "$$ClassName" : "TCastleColorRGBPersistent"
+              }
+            },
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent",
+              "Z" : 1.0000000000000000E+000
+            },
+            "ScaleOrientationPersistent" : {
+              "$$ClassName" : "TCastleVector4Persistent"
+            },
+            "ScalePersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 9.6000000000000000E+002,
+              "Y" : 6.4000000000000000E+002
+            },
+            "Url" : "castle-data:/Ship/stateczek.png"
           }
         ]
       },
@@ -159,7 +160,7 @@
         "Name" : "",
         "Orthographic" : {
           "$$ClassName" : "TCastleOrthographic",
-          "Height" : 1.7973160400390625E+003,
+          "Height" : 2.3526593017578125E+002,
           "OriginPersistent" : {
             "$$ClassName" : "TCastleVector2Persistent",
             "X" : 5.0000000000000000E-001,
@@ -182,8 +183,8 @@
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "X" : 1.3570234375000000E+003,
-          "Y" : 5.1605963134765625E+002,
+          "X" : 1.0173901367187500E+003,
+          "Y" : 6.7308032226562500E+002,
           "Z" : 1.6000000000000000E+003
         }
       },

@@ -19,7 +19,7 @@ type
   published
 
     MainViewport: TCastleViewport;
-    SceneMage: TCastleScene;
+    PlayerCharacter : TCastleScene;
     Collectible : TCollectible;
   private
     PlayerManager: TPlayerManager;
@@ -50,7 +50,7 @@ procedure TViewPlay.Start;
 begin
   inherited;
   CastleLog.WritelnLog('Weszlo');
-  PlayerManager := TPlayerManager.Create(SceneMage, SceneMage);
+  PlayerManager := TPlayerManager.Create(PlayerCharacter,PlayerCharacter);
  { Collectible.Start};
 end;
 

@@ -2,16 +2,21 @@ unit Collectible;
 
 interface
 
-uses Classes,CastleScene,CastleLog;
+uses Classes,
+CastleScene, CastleTransform, CastleLog;
+
 
 type
 {Collectible that will trigger next levels}
 TCollectible = class(TCastleScene)
-private
-    
+
+strict private
+    CollectibleBody : TCastleRigidBody;
+  {  Collider : TCastleBoxCollider;}
 public
     constructor Create(AOwner: TComponent); override;
-    procedure PrintLog;
+    procedure Start;
+    procedure PrintLog(const CollisionDetails: TPhysicsCollisionDetails);
 end;
 
 implementation
@@ -21,9 +26,14 @@ begin
     inherited;
 end;
 
-procedure TCollectible.PrintLog;
+procedure TCollectible.Start;
 begin
-    
+    CollectibleBody := FindBehavior(TCastleRigidBody)  as TCastleRigidBody;
+    CollectibleBody.OnCollisionEnter := {$ifdef FPC}@{$endif} PrintLog;
+end;
+
+procedure TCollectible.PrintLog(const CollisionDetails: TPhysicsCollisionDetails);
+begin
     CastleLog.WritelnLog('Test')
 end;
 

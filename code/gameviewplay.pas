@@ -23,6 +23,7 @@ type
     MainViewport: TCastleViewport;
     SceneMage: TCastleScene;
     CheckboxCameraFollow: TCastleCheckbox;
+    Collectible : TCollectible;
   private
     { DragonFlying and DragonFlyingTarget manage currect dragon (SceneDragon)
       animation and it's movement. }
@@ -57,6 +58,7 @@ begin
   inherited;
 
   PlayerManager := TPlayerManager.Create(SceneMage, SceneMage);
+  Collectible.Start;
 end;
 
 procedure TViewPlay.Update(const SecondsPassed: Single; var HandleInput: Boolean);
@@ -104,25 +106,25 @@ begin
 
   if Event.IsKey(keyW) then
   begin
-    CastleLog.WritelnLog('W');
+
     Exit(true);
   end;
 
   if Event.IsKey(keyS) then
   begin
-    CastleLog.WritelnLog('W');
+
     Exit(true);
   end;
 
   if Event.IsKey(keyA) then
   begin
-    CastleLog.WritelnLog('A');
+
     Exit(true);
   end;
 
   if Event.IsKey(keyD) then
   begin
-    CastleLog.WritelnLog('D');
+
     Exit(true);
   end;
 

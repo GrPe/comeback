@@ -10,7 +10,8 @@ interface
 uses Classes,
   CastleComponentSerialize, CastleUIControls, CastleControls,
   CastleKeysMouse, CastleViewport, CastleScene, CastleVectors,
-  PlayerManager;
+  PlayerManager,Collectible;
+
 
 type
   { Main "playing game" view, where most of the game logic takes place. }
@@ -100,6 +101,31 @@ begin
   
     Exit(true); // click was handled
   end;
+
+  if Event.IsKey(keyW) then
+  begin
+    CastleLog.WritelnLog('W');
+    Exit(true);
+  end;
+
+  if Event.IsKey(keyS) then
+  begin
+    Scene1.PrintLog;
+    Exit(true);
+  end;
+
+  if Event.IsKey(keyA) then
+  begin
+    CastleLog.WritelnLog('A');
+    Exit(true);
+  end;
+
+  if Event.IsKey(keyD) then
+  begin
+    CastleLog.WritelnLog('D');
+    Exit(true);
+  end;
+
 
   if Event.IsKey(keyF5) then
   begin

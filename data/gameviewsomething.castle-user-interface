@@ -15,7 +15,10 @@
     {
       "$$ClassName" : "TCastleViewport",
       "BackgroundColorPersistent" : {
-        "$$ClassName" : "TCastleColorPersistent"
+        "$$ClassName" : "TCastleColorPersistent",
+        "Blue" : 2.5000000000000000E-001,
+        "Green" : 2.5000000000000000E-001,
+        "Red" : 2.5000000000000000E-001
       },
       "Border" : {
         "$$ClassName" : "TBorder"
@@ -23,7 +26,6 @@
       "BorderColorPersistent" : {
         "$$ClassName" : "TCastleColorPersistent"
       },
-      "Camera" : "Camera1",
       "FullSize" : true,
       "Items" : {
         "$$ClassName" : "TCastleRootTransform",
@@ -53,6 +55,28 @@
         },
         "$Children" : [
           {
+            "$$ClassName" : "TCastleTiledMap",
+            "CenterPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "Name" : "TiledMapMap1Test1",
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent"
+            },
+            "ScaleOrientationPersistent" : {
+              "$$ClassName" : "TCastleVector4Persistent"
+            },
+            "ScalePersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : -9.5893634033203125E+002,
+              "Y" : -7.1020202636718750E+002
+            },
+            "Url" : "castle-data:/Map_1/Map_1_Test.tmx"
+          },
+          {
             "$$ClassName" : "TCastleCamera",
             "CenterPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent"
@@ -60,10 +84,10 @@
             "GravityUpPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent"
             },
-            "Name" : "Camera1",
+            "Name" : "Camera2",
             "Orthographic" : {
               "$$ClassName" : "TCastleOrthographic",
-              "Height" : 1.0000000000000000E+003,
+              "Height" : 4.0000000000000000E+003,
               "OriginPersistent" : {
                 "$$ClassName" : "TCastleVector2Persistent",
                 "X" : 5.0000000000000000E-001,
@@ -86,65 +110,12 @@
             },
             "TranslationPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
-              "X" : 9.6020001220703125E+002,
-              "Y" : 6.4000000000000000E+002
+              "Z" : 5.0000000000000000E+002
             }
-          },
-          {
-            "$$ClassName" : "TCastleScene",
-            "CenterPersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent"
-            },
-            "ExposeTransforms" : [
-            ],
-            "Name" : "Scene1",
-            "RenderLayer" : "rlFront",
-            "RenderOptions" : {
-              "$$ClassName" : "TCastleScene.TSceneRenderOptions",
-              "WireframeColorPersistent" : {
-                "$$ClassName" : "TCastleColorRGBPersistent"
-              }
-            },
-            "RotationPersistent" : {
-              "$$ClassName" : "TCastleVector4RotationPersistent"
-            },
-            "ScaleOrientationPersistent" : {
-              "$$ClassName" : "TCastleVector4Persistent"
-            },
-            "ScalePersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent"
-            },
-            "TranslationPersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent",
-              "Y" : 1.1883090820312500E+003
-            },
-            "Url" : "castle-data:/spritesheets/mage2.castle-sprite-sheet"
-          },
-          {
-            "$$ClassName" : "TCastleTiledMap",
-            "CenterPersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent"
-            },
-            "Name" : "TiledMapMap1Test1",
-            "RenderLayer" : "rlBack",
-            "RotationPersistent" : {
-              "$$ClassName" : "TCastleVector4RotationPersistent",
-              "Z" : 1.0000000000000000E+000
-            },
-            "ScaleOrientationPersistent" : {
-              "$$ClassName" : "TCastleVector4Persistent"
-            },
-            "ScalePersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent"
-            },
-            "TranslationPersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent"
-            },
-            "Url" : "castle-data:/Map_1/Map_1_Test.tmx"
           }
         ]
       },
-      "Name" : "MainViewport",
+      "Name" : "Viewport1",
       "TranslationPersistent" : {
         "$$ClassName" : "TCastleVector2Persistent"
       },
@@ -159,7 +130,7 @@
         "Name" : "",
         "Orthographic" : {
           "$$ClassName" : "TCastleOrthographic",
-          "Height" : 1.7973160400390625E+003,
+          "Height" : 2.1148591308593750E+003,
           "OriginPersistent" : {
             "$$ClassName" : "TCastleVector2Persistent",
             "X" : 5.0000000000000000E-001,
@@ -182,9 +153,7 @@
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "X" : 1.3570234375000000E+003,
-          "Y" : 5.1605963134765625E+002,
-          "Z" : 1.6000000000000000E+003
+          "Z" : 6.0000000000000000E+002
         }
       },
       "InternalDesignNavigationType" : 2,

@@ -1,0 +1,58 @@
+{
+  "$$ClassName" : "TCastleScene",
+  "AutoAnimation" : "Idle",
+  "CenterPersistent" : {
+    "$$ClassName" : "TCastleVector3Persistent"
+  },
+  "ExposeTransforms" : [
+  ],
+  "Name" : "Collectible",
+  "ProcessEvents" : true,
+  "RenderLayer" : "rlFront",
+  "RenderOptions" : {
+    "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+    "MagnificationFilter" : "magNearest",
+    "MinificationFilter" : "minNearest",
+    "WireframeColorPersistent" : {
+      "$$ClassName" : "TCastleColorRGBPersistent"
+    }
+  },
+  "RotationPersistent" : {
+    "$$ClassName" : "TCastleVector4RotationPersistent"
+  },
+  "ScaleOrientationPersistent" : {
+    "$$ClassName" : "TCastleVector4Persistent"
+  },
+  "ScalePersistent" : {
+    "$$ClassName" : "TCastleVector3Persistent"
+  },
+  "TranslationPersistent" : {
+    "$$ClassName" : "TCastleVector3Persistent"
+  },
+  "Url" : "castle-data:/collectible/idleAnim.castle-sprite-sheet",
+  "$Behaviors" : [
+    {
+      "$$ClassName" : "TCastleBoxCollider",
+      "Mode2D" : true,
+      "Name" : "BoxCollider2"
+    },
+    {
+      "$$ClassName" : "TCastleRigidBody",
+      "AngularVelocityPersistent" : {
+        "$$ClassName" : "TCastleVector3Persistent"
+      },
+      "Gravity" : false,
+      "LinearVelocityPersistent" : {
+        "$$ClassName" : "TCastleVector3Persistent"
+      },
+      "LockRotation" : [
+        0,
+        1
+      ],
+      "LockTranslation" : [
+        2
+      ],
+      "Name" : "RigidBody2"
+    }
+  ]
+}

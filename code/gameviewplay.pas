@@ -93,7 +93,7 @@ begin
     not handled in children controls.
   }
 
-  PlayerManager.HandleInput(Event);
+  PlayerManager.HandleInput(Event, MainViewport);
 
   if Event.IsMouseButton(buttonLeft) then
   begin

@@ -282,37 +282,40 @@
             "Url" : "castle-data:/spritesheets/tentacles.castle-sprite-sheet"
           },
           {
-            "$$ClassName" : "TCastleBox",
+            "$$ClassName" : "TCastleScene",
             "CenterPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent"
             },
-            "ColorPersistent" : {
-              "$$ClassName" : "TCastleColorPersistent"
-            },
+            "ExposeTransforms" : [
+            ],
             "Name" : "Box1",
             "RenderOptions" : {
               "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+              "Lighting" : false,
               "WireframeColorPersistent" : {
                 "$$ClassName" : "TCastleColorRGBPersistent"
               }
             },
             "RotationPersistent" : {
-              "$$ClassName" : "TCastleVector4RotationPersistent"
+              "$$ClassName" : "TCastleVector4RotationPersistent",
+              "Z" : 1.0000000000000000E+000
             },
             "ScaleOrientationPersistent" : {
               "$$ClassName" : "TCastleVector4Persistent"
             },
             "ScalePersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent"
-            },
-            "SizePersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent"
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 3.0000000000000000E+000,
+              "Y" : 3.0000000000000000E+000,
+              "Z" : 3.0000000000000000E+000
             },
             "TranslationPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
-              "X" : 1.4415274658203125E+003,
-              "Y" : 2.4217661132812500E+003
-            }
+              "X" : 1.1722099609375000E+003,
+              "Y" : 2.5551000976562500E+003,
+              "Z" : 2.0000000000000000E+000
+            },
+            "Url" : "castle-data:/spritesheets/disciple.castle-sprite-sheet"
           }
         ]
       },
@@ -331,7 +334,7 @@
         "Name" : "",
         "Orthographic" : {
           "$$ClassName" : "TCastleOrthographic",
-          "Height" : 4.4206840820312500E+003,
+          "Height" : 1.6814018554687500E+003,
           "OriginPersistent" : {
             "$$ClassName" : "TCastleVector2Persistent",
             "X" : 5.0000000000000000E-001,
@@ -354,7 +357,8 @@
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "Y" : 2.0803762207031250E+003,
+          "X" : 1.2254022216796875E+003,
+          "Y" : 2.5598676757812500E+003,
           "Z" : 1.6000000000000000E+003
         }
       },

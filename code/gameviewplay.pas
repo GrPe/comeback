@@ -66,6 +66,7 @@ var
 begin
   inherited;
 
+  PlayerManager.Update(SecondsPassed);
   ElapsedSeconds := ElapsedSeconds - SecondsPassed;
 
   if ElapsedSeconds > 0 then Exit();

@@ -20,6 +20,7 @@ type
         VP: TCastleViewport;
 
         PlayerBody: TCastleRigidBody;
+        TimeToMove: Single;
     public
         constructor Create(AOwner: TComponent; APlayerObject: TCastleScene; AVP: TCastleViewport);
         procedure Start;
@@ -28,6 +29,7 @@ type
         procedure BackToStart();
         procedure StopPlayer();
         procedure HandleCollision(const CollisionDetails: TPhysicsCollisionDetails);
+        procedure Update(const SecondsPassed: Single);
 end;
 
 
@@ -64,6 +66,8 @@ begin
     begin 
         Exit();
     end;
+
+    if TimeToMove > 0 then Exit();
 
     OldPosition := PlayerObject.TranslationXY;
 
@@ -117,6 +121,8 @@ begin
     PathSprites[PathIndex] := PathInstance;
 
     PathIndex := PathIndex + 1;
+
+    TimeToMove := 0.3;
 end;
 
 procedure TPlayerManager.StopPlayer();
@@ -128,7 +134,7 @@ begin
 
     for i:= 0 to PathIndex do
     begin
-        VP.Items.Remove(PathSprites[i]);
+        FreeAndNil(PathSprites[i]);
     end;
 end;
 
@@ -148,10 +154,23 @@ begin
 end;
 
 procedure TPlayerManager.HandleCollision(const CollisionDetails: TPhysicsCollisionDetails);
+var 
+    CollidedObject: TCastleTransform;
 begin
+    // magic of collisions
+    CollidedObject := CollisionDetails.OtherTransform();
+
+    CastleLog.WritelnLog(CollidedObject.Name);
+
+
     PathIndex := PathIndex - 1;    
     PlayerObject.TranslationXY := PlayerPath[PathIndex];
-    VP.Items.Remove(PathSprites[PathIndex]);
+    FreeAndNil(PathSprites[PathIndex]);
+end;
+
+procedure TPlayerManager.Update(const SecondsPassed: Single);
+begin
+    TimeToMove := TimeToMove - SecondsPassed;
 end;
 
 end.

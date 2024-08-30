@@ -203,7 +203,32 @@
               "X" : 9.4400000000000000E+002,
               "Y" : 6.4000000000000000E+002
             },
-            "Url" : "castle-data:/collectible/idleAnim.castle-sprite-sheet"
+            "Url" : "castle-data:/collectible/idleAnim.castle-sprite-sheet",
+            "$Behaviors" : [
+              {
+                "$$ClassName" : "TCastleBoxCollider",
+                "Mode2D" : true,
+                "Name" : "BoxCollider2"
+              },
+              {
+                "$$ClassName" : "TCastleRigidBody",
+                "AngularVelocityPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "Gravity" : false,
+                "LinearVelocityPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "LockRotation" : [
+                  0,
+                  1
+                ],
+                "LockTranslation" : [
+                  2
+                ],
+                "Name" : "RigidBody2"
+              }
+            ]
           }
         ]
       },
@@ -222,7 +247,7 @@
         "Name" : "",
         "Orthographic" : {
           "$$ClassName" : "TCastleOrthographic",
-          "Height" : 3.3946926879882812E+002,
+          "Height" : 2.9709445190429688E+002,
           "OriginPersistent" : {
             "$$ClassName" : "TCastleVector2Persistent",
             "X" : 5.0000000000000000E-001,
@@ -245,8 +270,8 @@
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "X" : 9.3363140869140625E+002,
-          "Y" : 6.4336785888671875E+002,
+          "X" : 9.4202124023437500E+002,
+          "Y" : 6.0457916259765625E+002,
           "Z" : 1.6000000000000000E+003
         }
       },

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas width="1024" height="1024" imagePath="idleAnim.png">
+  <SubTexture x="0" y="1008" fps="8" name="Idle_1" width="16" height="16"/>
+  <SubTexture x="16" y="1008" name="Idle_2" width="16" height="16"/>
+  <SubTexture x="32" y="1008" name="Idle_3" width="16" height="16"/>
+  <SubTexture x="48" y="1008" name="Idle_4" width="16" height="16"/>
+  <SubTexture x="64" y="1008" name="Idle_5" width="16" height="16"/>
+  <SubTexture x="80" y="1008" name="Idle_6" width="16" height="16"/>
+  <SubTexture x="96" y="1008" name="Idle_7" width="16" height="16"/>
+  <SubTexture x="112" y="1008" name="Idle_8" width="16" height="16"/>
+  <SubTexture x="128" y="1008" name="Idle_9" width="16" height="16"/>
+</TextureAtlas>

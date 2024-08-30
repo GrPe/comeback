@@ -63,7 +63,7 @@
             "Name" : "Camera1",
             "Orthographic" : {
               "$$ClassName" : "TCastleOrthographic",
-              "Height" : 1.0000000000000000E+003,
+              "Height" : 3.2000000000000000E+002,
               "OriginPersistent" : {
                 "$$ClassName" : "TCastleVector2Persistent",
                 "X" : 5.0000000000000000E-001,
@@ -122,6 +122,8 @@
             "RenderLayer" : "rlFront",
             "RenderOptions" : {
               "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+              "MagnificationFilter" : "magNearest",
+              "MinificationFilter" : "minNearest",
               "WireframeColorPersistent" : {
                 "$$ClassName" : "TCastleColorRGBPersistent"
               }
@@ -141,7 +143,67 @@
               "X" : 9.6000000000000000E+002,
               "Y" : 6.4000000000000000E+002
             },
-            "Url" : "castle-data:/Ship/stateczek.png"
+            "Url" : "castle-data:/Ship/stateczek.png",
+            "$Behaviors" : [
+              {
+                "$$ClassName" : "TCastleBoxCollider",
+                "Mode2D" : true,
+                "Name" : "BoxCollider1"
+              },
+              {
+                "$$ClassName" : "TCastleRigidBody",
+                "AngularVelocityPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "Gravity" : false,
+                "LinearVelocityPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "LockRotation" : [
+                  0,
+                  1
+                ],
+                "LockTranslation" : [
+                  2
+                ],
+                "Name" : "RigidBody1"
+              }
+            ]
+          },
+          {
+            "$$ClassName" : "TCastleScene",
+            "AutoAnimation" : "Idle",
+            "CenterPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "ExposeTransforms" : [
+            ],
+            "Name" : "Collectible",
+            "ProcessEvents" : true,
+            "RenderLayer" : "rlFront",
+            "RenderOptions" : {
+              "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+              "MagnificationFilter" : "magNearest",
+              "MinificationFilter" : "minNearest",
+              "WireframeColorPersistent" : {
+                "$$ClassName" : "TCastleColorRGBPersistent"
+              }
+            },
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent"
+            },
+            "ScaleOrientationPersistent" : {
+              "$$ClassName" : "TCastleVector4Persistent"
+            },
+            "ScalePersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : 9.4400000000000000E+002,
+              "Y" : 6.4000000000000000E+002
+            },
+            "Url" : "castle-data:/collectible/idleAnim.castle-sprite-sheet"
           }
         ]
       },
@@ -160,7 +222,7 @@
         "Name" : "",
         "Orthographic" : {
           "$$ClassName" : "TCastleOrthographic",
-          "Height" : 2.3526593017578125E+002,
+          "Height" : 3.3946926879882812E+002,
           "OriginPersistent" : {
             "$$ClassName" : "TCastleVector2Persistent",
             "X" : 5.0000000000000000E-001,
@@ -183,8 +245,8 @@
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "X" : 1.0173901367187500E+003,
-          "Y" : 6.7308032226562500E+002,
+          "X" : 9.3363140869140625E+002,
+          "Y" : 6.4336785888671875E+002,
           "Z" : 1.6000000000000000E+003
         }
       },

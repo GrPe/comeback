@@ -10,7 +10,7 @@ interface
 uses Classes,
   CastleComponentSerialize, CastleUIControls, CastleControls,
   CastleKeysMouse, CastleViewport, CastleScene, CastleVectors,
-  PlayerManager,Collectible;
+  PlayerManager,Collectible, CastleLog;
 
 
 type
@@ -110,7 +110,7 @@ begin
 
   if Event.IsKey(keyS) then
   begin
-    Scene1.PrintLog;
+    CastleLog.WritelnLog('W');
     Exit(true);
   end;
 

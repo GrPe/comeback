@@ -53,6 +53,7 @@ begin
   inherited;
   CastleLog.WritelnLog('Weszlo');
   PlayerManager := TPlayerManager.Create(PlayerCharacter,PlayerCharacter,MainViewport);
+  PlayerManager.Start();
  { Collectible.Start};
 end;
 

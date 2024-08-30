@@ -5,10 +5,10 @@ interface
 uses Classes,
   CastleComponentSerialize, CastleUIControls, CastleControls,
   CastleKeysMouse, CastleViewport, CastleScene, CastleVectors,
-  CastleLog, sysutils;
+  CastleLog, sysutils, CastleTransform;
 
 type
-    TPlayerManager = class(TCastleUserInterface)
+    TPlayerManager = class(TCastleScene)
     private
         PlayerObject: TCastleScene;
         PlayerPath: array[0..10000] of TVector2;
@@ -18,12 +18,16 @@ type
         Iterator: integer;
         PathTemplate: TCastleScene;
         VP: TCastleViewport;
+
+        PlayerBody: TCastleRigidBody;
     public
         constructor Create(AOwner: TComponent; APlayerObject: TCastleScene; AVP: TCastleViewport);
-        procedure HandleInput(const Event: TInputPressRelease);
+        procedure Start;
+        procedure HandleInput(const Events: TInputPressRelease);
         procedure MoveNext();
         procedure BackToStart();
         procedure StopPlayer();
+        procedure HandleCollision(const CollisionDetails: TPhysicsCollisionDetails);
 end;
 
 
@@ -42,9 +46,15 @@ inherited Create(AOwner);
     PathTemplate.Load('castle-data:/Ship/stateczek.png');
 end;
 
-procedure TPlayerManager.HandleInput(const Event: TInputPressRelease);
+procedure TPlayerManager.Start;
+begin
+    PlayerBody := PlayerObject.FindBehavior(TCastleRigidBody)  as TCastleRigidBody;
+    PlayerBody.OnCollisionEnter := {$ifdef FPC}@{$endif} HandleCollision;
+end;
+
+procedure TPlayerManager.HandleInput(const Events: TInputPressRelease);
 const
-    PlayerSpeed = 32;
+    PlayerSpeed = 16;
 var
     T, OldPosition: TVector2;
     PathInstance: TCastleScene;
@@ -57,49 +67,36 @@ begin
 
     OldPosition := PlayerObject.TranslationXY;
 
-    if Event.IsKey(keyW) then
+    if Events.IsKey(keyW) then
     begin
         T := PlayerObject.TranslationXY;
         T.Y := T.Y + PlayerSpeed;
         PlayerObject.TranslationXY := T;
     end
 
-    else if Event.IsKey(KeyS) then
+    else if Events.IsKey(KeyS) then
     begin
         T := PlayerObject.TranslationXY;
         T.Y := T.Y - PlayerSpeed;
         PlayerObject.TranslationXY := T;
     end
 
-    else if Event.IsKey(KeyA) then
+    else if Events.IsKey(KeyA) then
     begin
         T := PlayerObject.TranslationXY;
         T.X := T.X - PlayerSpeed;
         PlayerObject.TranslationXY := T;
     end
 
-    else if Event.IsKey(KeyD) then
+    else if Events.IsKey(KeyD) then
     begin
         T := PlayerObject.TranslationXY;
         T.X := T.X + PlayerSpeed;
         PlayerObject.TranslationXY := T;
     end
 
-    else if Event.IsKey(KeyP) then
+    else if Events.IsKey(KeyP) then
     begin
-    
-        // PathTemplate:= TCastleScene.Create(Self);
-        // PathTemplate.Load('castle-data:/Ship/stateczek.png');
-        // for i:=0 to PathIndex do
-        //     begin
-        //     PathInstance := PathTemplate.Clone(Self);
-        //     PathInstance.Translation := Vector3(0, 0, 2);
-        //     PathInstance.Scale := Vector3(1, 1, 1);
-        //     PathInstance.TranslationXY := PlayerPath[i];
-        //     VP.Items.Add(PathInstance);
-        //     end;
-
-        
         StopPlayer();
         BackToStart();
         Exit();
@@ -148,6 +145,13 @@ procedure TPlayerManager.BackToStart();
 begin
     Iterator := 0;
     PlayerObject.TranslationXY := PlayerPath[Iterator];
+end;
+
+procedure TPlayerManager.HandleCollision(const CollisionDetails: TPhysicsCollisionDetails);
+begin
+    PathIndex := PathIndex - 1;    
+    PlayerObject.TranslationXY := PlayerPath[PathIndex];
+    VP.Items.Remove(PathSprites[PathIndex]);
 end;
 
 end.

@@ -53,6 +53,88 @@
         },
         "$Children" : [
           {
+            "$$ClassName" : "TCastleTransform",
+            "CenterPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "Name" : "GameState",
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent",
+              "Z" : 1.0000000000000000E+000
+            },
+            "ScaleOrientationPersistent" : {
+              "$$ClassName" : "TCastleVector4Persistent"
+            },
+            "ScalePersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "$Children" : [
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "Macki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "Mac_1",
+                "ProcessEvents" : true,
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 2.7164904785156250E+002,
+                  "Y" : 5.8020629882812500E+001
+                },
+                "Url" : "castle-data:/zlole/macki2.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider3"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "$$ClassName" : "TCastleCamera",
             "CenterPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent"
@@ -91,27 +173,6 @@
             }
           },
           {
-            "$$ClassName" : "TCastleTiledMap",
-            "CenterPersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent"
-            },
-            "Name" : "TiledMapMap1Test1",
-            "RenderLayer" : "rlBack",
-            "RotationPersistent" : {
-              "$$ClassName" : "TCastleVector4RotationPersistent"
-            },
-            "ScaleOrientationPersistent" : {
-              "$$ClassName" : "TCastleVector4Persistent"
-            },
-            "ScalePersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent"
-            },
-            "TranslationPersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent"
-            },
-            "Url" : "castle-data:/Map_1/Map_1_Test.tmx"
-          },
-          {
             "$$ClassName" : "TCastleScene",
             "CenterPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent"
@@ -147,8 +208,21 @@
             "$Behaviors" : [
               {
                 "$$ClassName" : "TCastleBoxCollider",
+                "AutoSize" : false,
                 "Mode2D" : true,
-                "Name" : "BoxCollider1"
+                "Name" : "BoxCollider1",
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent"
+                },
+                "SizePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 1.0000000000000000E+001,
+                  "Y" : 1.0000000000000000E+001,
+                  "Z" : 1.0000000000000000E+002
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                }
               },
               {
                 "$$ClassName" : "TCastleRigidBody",
@@ -229,6 +303,28 @@
                 "Name" : "RigidBody2"
               }
             ]
+          },
+          {
+            "$$ClassName" : "TCastleTiledMap",
+            "CenterPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "Name" : "Tilemap",
+            "RenderLayer" : "rlBack",
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent",
+              "Z" : 1.0000000000000000E+000
+            },
+            "ScaleOrientationPersistent" : {
+              "$$ClassName" : "TCastleVector4Persistent"
+            },
+            "ScalePersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "Url" : "castle-data:/Map_1/Map_1_Test.tmx"
           }
         ]
       },
@@ -247,7 +343,7 @@
         "Name" : "",
         "Orthographic" : {
           "$$ClassName" : "TCastleOrthographic",
-          "Height" : 1.6304896545410156E+002,
+          "Height" : 2.9936221313476562E+002,
           "OriginPersistent" : {
             "$$ClassName" : "TCastleVector2Persistent",
             "X" : 5.0000000000000000E-001,
@@ -270,9 +366,9 @@
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "X" : -1.0245849609375000E+001,
-          "Y" : 4.6192077636718750E+001,
-          "Z" : 1.6000000000000000E+003
+          "X" : 8.8385845947265625E+002,
+          "Y" : 5.9861657714843750E+002,
+          "Z" : 4.5915551185607910E+000
         }
       },
       "InternalDesignNavigationType" : 2,

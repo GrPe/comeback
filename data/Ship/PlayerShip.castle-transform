@@ -1,0 +1,34 @@
+{
+  "$$ClassName" : "TCastleScene",
+  "CenterPersistent" : {
+    "$$ClassName" : "TCastleVector3Persistent"
+  },
+  "ExposeTransforms" : [
+  ],
+  "Name" : "Dot",
+  "RenderLayer" : "rlFront",
+  "RenderOptions" : {
+    "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+    "MagnificationFilter" : "magNearest",
+    "MinificationFilter" : "minNearest",
+    "WireframeColorPersistent" : {
+      "$$ClassName" : "TCastleColorRGBPersistent"
+    }
+  },
+  "RotationPersistent" : {
+    "$$ClassName" : "TCastleVector4RotationPersistent",
+    "Z" : 1.0000000000000000E+000
+  },
+  "ScaleOrientationPersistent" : {
+    "$$ClassName" : "TCastleVector4Persistent"
+  },
+  "ScalePersistent" : {
+    "$$ClassName" : "TCastleVector3Persistent"
+  },
+  "TranslationPersistent" : {
+    "$$ClassName" : "TCastleVector3Persistent",
+    "X" : 9.7480291748046875E+002,
+    "Y" : 6.4000000000000000E+002
+  },
+  "Url" : "castle-data:/Ship/low_quality_dot.png"
+}

@@ -10,7 +10,7 @@ interface
 uses Classes,
   CastleComponentSerialize, CastleUIControls, CastleControls,
   CastleKeysMouse, CastleViewport, CastleScene, CastleVectors,
-  PlayerManager,Collectible, CastleLog;
+  PlayerManager,Collectible, GameState, CastleLog;
 
 
 type
@@ -21,6 +21,7 @@ type
     MainViewport: TCastleViewport;
     PlayerCharacter : TCastleScene;
     Collectible : TCollectible;
+    GameState : TEnemyStateAssigner;
   private
     PlayerManager: TPlayerManager;
     ElapsedSeconds: Single;
@@ -51,9 +52,9 @@ end;
 procedure TViewPlay.Start;
 begin
   inherited;
-  CastleLog.WritelnLog('Weszlo');
   PlayerManager := TPlayerManager.Create(PlayerCharacter,PlayerCharacter,MainViewport);
  { Collectible.Start};
+  GameState.Start();
 end;
 
 procedure TViewPlay.Update(const SecondsPassed: Single; var HandleInput: Boolean);

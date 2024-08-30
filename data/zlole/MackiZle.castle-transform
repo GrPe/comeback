@@ -1,0 +1,60 @@
+{
+  "$$ClassName" : "TCastleScene",
+  "AutoAnimation" : "Macki",
+  "CenterPersistent" : {
+    "$$ClassName" : "TCastleVector3Persistent"
+  },
+  "ExposeTransforms" : [
+  ],
+  "Name" : "Scene1",
+  "ProcessEvents" : true,
+  "RenderLayer" : "rlFront",
+  "RenderOptions" : {
+    "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+    "MagnificationFilter" : "magNearest",
+    "MinificationFilter" : "minNearest",
+    "WireframeColorPersistent" : {
+      "$$ClassName" : "TCastleColorRGBPersistent"
+    }
+  },
+  "RotationPersistent" : {
+    "$$ClassName" : "TCastleVector4RotationPersistent",
+    "Z" : 1.0000000000000000E+000
+  },
+  "ScaleOrientationPersistent" : {
+    "$$ClassName" : "TCastleVector4Persistent"
+  },
+  "ScalePersistent" : {
+    "$$ClassName" : "TCastleVector3Persistent"
+  },
+  "TranslationPersistent" : {
+    "$$ClassName" : "TCastleVector3Persistent",
+    "X" : 2.7164904785156250E+002,
+    "Y" : 5.8020629882812500E+001
+  },
+  "Url" : "castle-data:/zlole/macki2.castle-sprite-sheet",
+  "$Behaviors" : [
+    {
+      "$$ClassName" : "TCastleBoxCollider",
+      "Mode2D" : true,
+      "Name" : "BoxCollider3"
+    },
+    {
+      "$$ClassName" : "TCastleRigidBody",
+      "AngularVelocityPersistent" : {
+        "$$ClassName" : "TCastleVector3Persistent"
+      },
+      "LinearVelocityPersistent" : {
+        "$$ClassName" : "TCastleVector3Persistent"
+      },
+      "LockRotation" : [
+        0,
+        1
+      ],
+      "LockTranslation" : [
+        2
+      ],
+      "Name" : "RigidBody3"
+    }
+  ]
+}

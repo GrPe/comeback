@@ -17,18 +17,11 @@ type
   { Main "playing game" view, where most of the game logic takes place. }
   TViewPlay = class(TCastleView)
   published
-    { Components designed using CGE editor.
-      These fields will be automatically initialized at Start. }
-    LabelFps: TCastleLabel;
+
     MainViewport: TCastleViewport;
     SceneMage: TCastleScene;
-    CheckboxCameraFollow: TCastleCheckbox;
     Collectible : TCollectible;
   private
-    { DragonFlying and DragonFlyingTarget manage currect dragon (SceneDragon)
-      animation and it's movement. }
-    DragonFlying: Boolean;
-    DragonFlyingTarget: TVector2;
     PlayerManager: TPlayerManager;
   public
     constructor Create(AOwner: TComponent); override;
@@ -56,9 +49,9 @@ end;
 procedure TViewPlay.Start;
 begin
   inherited;
-
+  CastleLog.WritelnLog('Weszlo');
   PlayerManager := TPlayerManager.Create(SceneMage, SceneMage);
-  Collectible.Start;
+ { Collectible.Start};
 end;
 
 procedure TViewPlay.Update(const SecondsPassed: Single; var HandleInput: Boolean);
@@ -69,16 +62,6 @@ var
   CamPos: TVector3;
 begin
   inherited;
-  { This virtual method is executed every frame (many times per second). }
-
-  Assert(LabelFps <> nil, 'If you remove LabelFps from the design, remember to remove also the assignment "LabelFps.Caption := ..." from code');
-  LabelFps.Caption := 'FPS: ' + Container.Fps.ToString;
-
-  if CheckboxCameraFollow.Checked then
-  begin
-    CamPos := MainViewport.Camera.Translation;
-    MainViewport.Camera.Translation := CamPos;
-  end;
 end;
 
 function TViewPlay.Press(const Event: TInputPressRelease): Boolean;

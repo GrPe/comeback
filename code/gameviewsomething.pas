@@ -3,7 +3,8 @@ unit GameViewSomething;
 interface
 
 uses Classes,
-  CastleVectors, CastleUIControls, CastleControls, CastleKeysMouse;
+  CastleVectors, CastleUIControls, CastleControls, CastleKeysMouse,
+  CastleLog;
 
 type
   TViewSomething = class(TCastleView)
@@ -22,6 +23,8 @@ var
 
 implementation
 
+PlayerManager.HandleInput(Event);
+
 constructor TViewSomething.Create(AOwner: TComponent);
 begin
   inherited;
@@ -32,12 +35,14 @@ procedure TViewSomething.Start;
 begin
   inherited;
   { Executed once when view starts. }
+  CastleLog.WritelnLog('Weszlo');
 end;
 
 procedure TViewSomething.Update(const SecondsPassed: Single; var HandleInput: boolean);
 begin
   inherited;
   { Executed every frame. }
+  CastleLog.WritelnLog('Weszlo');
 end;
 
 end.

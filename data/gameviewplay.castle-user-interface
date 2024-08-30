@@ -53,44 +53,6 @@
         },
         "$Children" : [
           {
-            "$$ClassName" : "TCastleImageTransform",
-            "CenterPersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent"
-            },
-            "ColorPersistent" : {
-              "$$ClassName" : "TCastleColorPersistent"
-            },
-            "Name" : "ImageBackground",
-            "PivotPersistent" : {
-              "$$ClassName" : "TCastleVector2Persistent"
-            },
-            "RepeatImagePersistent" : {
-              "$$ClassName" : "TCastleVector2Persistent"
-            },
-            "RotationPersistent" : {
-              "$$ClassName" : "TCastleVector4RotationPersistent"
-            },
-            "ScaleOrientationPersistent" : {
-              "$$ClassName" : "TCastleVector4Persistent"
-            },
-            "ScalePersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent",
-              "X" : 1.2000000000000000E+001,
-              "Y" : 1.2000000000000000E+001
-            },
-            "ShiftPersistent" : {
-              "$$ClassName" : "TCastleVector2Persistent"
-            },
-            "SizePersistent" : {
-              "$$ClassName" : "TCastleVector2Persistent"
-            },
-            "TranslationPersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent",
-              "Y" : 2.0705375976562500E+003
-            },
-            "Url" : "castle-data:/background/background_smaller.png"
-          },
-          {
             "$$ClassName" : "TCastleCamera",
             "CenterPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent"
@@ -101,7 +63,7 @@
             "Name" : "Camera1",
             "Orthographic" : {
               "$$ClassName" : "TCastleOrthographic",
-              "Height" : 4.0000000000000000E+003,
+              "Height" : 1.0000000000000000E+003,
               "OriginPersistent" : {
                 "$$ClassName" : "TCastleVector2Persistent",
                 "X" : 5.0000000000000000E-001,
@@ -124,8 +86,8 @@
             },
             "TranslationPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
-              "Y" : 2.0000000000000000E+003,
-              "Z" : 5.0000000000000000E+002
+              "X" : 9.6020001220703125E+002,
+              "Y" : 6.4000000000000000E+002
             }
           },
           {
@@ -157,6 +119,27 @@
               "Y" : 1.1883090820312500E+003
             },
             "Url" : "castle-data:/spritesheets/mage2.castle-sprite-sheet"
+          },
+          {
+            "$$ClassName" : "TCastleTiledMap",
+            "CenterPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "Name" : "TiledMapMap1Test1",
+            "RenderLayer" : "rlBack",
+            "RotationPersistent" : {
+              "$$ClassName" : "TCastleVector4RotationPersistent"
+            },
+            "ScaleOrientationPersistent" : {
+              "$$ClassName" : "TCastleVector4Persistent"
+            },
+            "ScalePersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "TranslationPersistent" : {
+              "$$ClassName" : "TCastleVector3Persistent"
+            },
+            "Url" : "castle-data:/Map_1/Map_1_Test.tmx"
           }
         ]
       },
@@ -198,8 +181,8 @@
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "X" : -7.7861083984375000E+002,
-          "Y" : 1.2103583984375000E+003,
+          "X" : 1.3570234375000000E+003,
+          "Y" : 5.1605963134765625E+002,
           "Z" : 1.6000000000000000E+003
         }
       },
@@ -245,67 +228,6 @@
           "$$ClassName" : "TCastleVector2Persistent"
         }
       }
-    },
-    {
-      "$$ClassName" : "TCastleLabel",
-      "Border" : {
-        "$$ClassName" : "TBorder"
-      },
-      "BorderColorPersistent" : {
-        "$$ClassName" : "TCastleColorPersistent"
-      },
-      "ColorPersistent" : {
-        "$$ClassName" : "TCastleColorPersistent",
-        "Green" : 1.0000000000000000E+000,
-        "Red" : 1.0000000000000000E+000
-      },
-      "FontSize" : 2.0000000000000000E+001,
-      "FrameColorPersistent" : {
-        "$$ClassName" : "TCastleColorPersistent"
-      },
-      "HorizontalAnchorParent" : "hpRight",
-      "HorizontalAnchorSelf" : "hpRight",
-      "Name" : "LabelFps",
-      "OutlineColorPersistent" : {
-        "$$ClassName" : "TCastleColorPersistent"
-      },
-      "Text" : [
-        "FPS: xxx"
-      ],
-      "TranslationPersistent" : {
-        "$$ClassName" : "TCastleVector2Persistent",
-        "X" : -2.0000000000000000E+001,
-        "Y" : -2.0000000000000000E+001
-      },
-      "VerticalAnchorParent" : "vpTop",
-      "VerticalAnchorSelf" : "vpTop"
-    },
-    {
-      "$$ClassName" : "TCastleCheckbox",
-      "Border" : {
-        "$$ClassName" : "TBorder"
-      },
-      "BorderColorPersistent" : {
-        "$$ClassName" : "TCastleColorPersistent"
-      },
-      "Caption" : "Camera Follows Dragon",
-      "CheckboxColorPersistent" : {
-        "$$ClassName" : "TCastleColorPersistent"
-      },
-      "CheckboxSize" : 5.0000000000000000E+001,
-      "Checked" : true,
-      "FontSize" : 4.0000000000000000E+001,
-      "Name" : "CheckboxCameraFollow",
-      "TextColorPersistent" : {
-        "$$ClassName" : "TCastleColorPersistent"
-      },
-      "TranslationPersistent" : {
-        "$$ClassName" : "TCastleVector2Persistent",
-        "X" : 4.0000000000000000E+001,
-        "Y" : -5.0000000000000000E+001
-      },
-      "VerticalAnchorParent" : "vpTop",
-      "VerticalAnchorSelf" : "vpTop"
     }
   ]
 }

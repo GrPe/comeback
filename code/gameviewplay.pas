@@ -23,6 +23,7 @@ type
     Collectible : TCollectible;
   private
     PlayerManager: TPlayerManager;
+    ElapsedSeconds: Single;
   public
     constructor Create(AOwner: TComponent); override;
     procedure Start; override;
@@ -44,13 +45,14 @@ constructor TViewPlay.Create(AOwner: TComponent);
 begin
   inherited;
   DesignUrl := 'castle-data:/gameviewplay.castle-user-interface';
+  ElapsedSeconds := 0.8;
 end;
 
 procedure TViewPlay.Start;
 begin
   inherited;
   CastleLog.WritelnLog('Weszlo');
-  PlayerManager := TPlayerManager.Create(PlayerCharacter,PlayerCharacter);
+  PlayerManager := TPlayerManager.Create(PlayerCharacter,PlayerCharacter,MainViewport);
  { Collectible.Start};
 end;
 
@@ -62,6 +64,13 @@ var
   CamPos: TVector3;
 begin
   inherited;
+
+  ElapsedSeconds := ElapsedSeconds - SecondsPassed;
+
+  if ElapsedSeconds > 0 then Exit();
+
+  PlayerManager.MoveNext();
+  ElapsedSeconds := 0.8;
 end;
 
 function TViewPlay.Press(const Event: TInputPressRelease): Boolean;
@@ -79,38 +88,13 @@ begin
     not handled in children controls.
   }
 
-  PlayerManager.HandleInput(Event, MainViewport);
+  PlayerManager.HandleInput(Event);
 
   if Event.IsMouseButton(buttonLeft) then
   begin
   
     Exit(true); // click was handled
   end;
-
-  if Event.IsKey(keyW) then
-  begin
-
-    Exit(true);
-  end;
-
-  if Event.IsKey(keyS) then
-  begin
-
-    Exit(true);
-  end;
-
-  if Event.IsKey(keyA) then
-  begin
-
-    Exit(true);
-  end;
-
-  if Event.IsKey(keyD) then
-  begin
-
-    Exit(true);
-  end;
-
 
   if Event.IsKey(keyF5) then
   begin

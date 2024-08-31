@@ -59,6 +59,11 @@
             "Stream" : true,
             "Url" : "castle-data:/sounds/433016__derjuli__ocean.wav",
             "Volume" : 5.0000000745058060E-002
+          },
+          {
+            "$$ClassName" : "TCastleSound",
+            "Name" : "Splash1",
+            "Url" : "castle-data:/sounds/223808__ctcollab__splash-1.wav"
           }
         ],
         "$Children" : [
@@ -2834,6 +2839,13 @@
                   2
                 ],
                 "Name" : "RigidBody1"
+              },
+              {
+                "$$ClassName" : "TCastleSoundSource",
+                "Name" : "SoundSource1",
+                "Sound" : "Splash1",
+                "SoundPlaying" : false,
+                "Spatial" : false
               }
             ]
           },
@@ -5787,7 +5799,7 @@
         "Name" : "",
         "Orthographic" : {
           "$$ClassName" : "TCastleOrthographic",
-          "Height" : 3.9084866333007812E+002,
+          "Height" : 2.6199368286132812E+002,
           "OriginPersistent" : {
             "$$ClassName" : "TCastleVector2Persistent",
             "X" : 5.0000000000000000E-001,
@@ -5810,8 +5822,8 @@
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "X" : 9.3986614990234375E+002,
-          "Y" : 6.5596728515625000E+002
+          "X" : 9.9090582275390625E+002,
+          "Y" : 6.4705743408203125E+002
         }
       },
       "InternalDesignNavigationType" : 2,

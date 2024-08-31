@@ -6,7 +6,7 @@ uses Classes,
   CastleComponentSerialize, CastleUIControls, CastleControls,
   CastleKeysMouse, CastleViewport, CastleScene, CastleVectors,
   CastleLog, sysutils, CastleTransform, GameState, CastleRenderOptions,
-  CastleSoundEngine;
+  CastleSoundEngine, math;
 
 type
     TPlayerManager = class(TCastleScene)
@@ -158,6 +158,8 @@ var
     RandomPitch : real;
     I : integer;
 begin
+    Randomize;
+    Splash1.Pitch := Max(0.5, Random); 
     SoundEngine.Play(Splash1);
 end;
 

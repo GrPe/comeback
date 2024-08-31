@@ -648,8 +648,21 @@
                 "$Behaviors" : [
                   {
                     "$$ClassName" : "TCastleBoxCollider",
+                    "AutoSize" : false,
                     "Mode2D" : true,
-                    "Name" : "BoxCollider8"
+                    "Name" : "BoxCollider8",
+                    "RotationPersistent" : {
+                      "$$ClassName" : "TCastleVector4RotationPersistent"
+                    },
+                    "SizePersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent",
+                      "X" : 1.2000000000000000E+001,
+                      "Y" : 1.2000000000000000E+001,
+                      "Z" : 1.0000000000000000E+002
+                    },
+                    "TranslationPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    }
                   },
                   {
                     "$$ClassName" : "TCastleRigidBody",
@@ -776,8 +789,21 @@
                 "$Behaviors" : [
                   {
                     "$$ClassName" : "TCastleBoxCollider",
+                    "AutoSize" : false,
                     "Mode2D" : true,
-                    "Name" : "BoxCollider26"
+                    "Name" : "BoxCollider26",
+                    "RotationPersistent" : {
+                      "$$ClassName" : "TCastleVector4RotationPersistent"
+                    },
+                    "SizePersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent",
+                      "X" : 1.2000000000000000E+001,
+                      "Y" : 1.2000000000000000E+001,
+                      "Z" : 1.0000000000000000E+002
+                    },
+                    "TranslationPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    }
                   },
                   {
                     "$$ClassName" : "TCastleRigidBody",
@@ -840,8 +866,21 @@
                 "$Behaviors" : [
                   {
                     "$$ClassName" : "TCastleBoxCollider",
+                    "AutoSize" : false,
                     "Mode2D" : true,
-                    "Name" : "BoxCollider27"
+                    "Name" : "BoxCollider27",
+                    "RotationPersistent" : {
+                      "$$ClassName" : "TCastleVector4RotationPersistent"
+                    },
+                    "SizePersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent",
+                      "X" : 1.2000000000000000E+001,
+                      "Y" : 1.2000000000000000E+001,
+                      "Z" : 1.0000000000000000E+002
+                    },
+                    "TranslationPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    }
                   },
                   {
                     "$$ClassName" : "TCastleRigidBody",

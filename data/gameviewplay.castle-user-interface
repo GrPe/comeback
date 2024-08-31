@@ -131,6 +131,64 @@
                     "Name" : "RigidBody3"
                   }
                 ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "Pir_0",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.7600885009765625E+002,
+                  "Y" : 6.1089648437500000E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider4"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody4"
+                  }
+                ]
               }
             ]
           },
@@ -343,7 +401,7 @@
         "Name" : "",
         "Orthographic" : {
           "$$ClassName" : "TCastleOrthographic",
-          "Height" : 3.4206048583984375E+002,
+          "Height" : 1.9408981323242188E+002,
           "OriginPersistent" : {
             "$$ClassName" : "TCastleVector2Persistent",
             "X" : 5.0000000000000000E-001,
@@ -366,8 +424,8 @@
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "X" : 9.7092395019531250E+002,
-          "Y" : 5.9611193847656250E+002,
+          "X" : 9.2456634521484375E+002,
+          "Y" : 6.8024530029296875E+002,
           "Z" : 4.5915551185607910E+000
         }
       },

@@ -66,7 +66,7 @@ end;
 
 procedure TGameMode.Restart();
 begin
-    CurrentLevelIndex := -1;
+    CurrentLevelIndex := CurrentLevelIndex - 1;
     TurnOnWithNumber(CurrentLevelIndex);
 end;
 

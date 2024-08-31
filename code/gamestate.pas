@@ -37,17 +37,6 @@ begin
     ItemsCount := Count() - 1;
     DangerousObjectsIndex := -1;
     CurrentLevelIndex := -1;
-
-    for I := 0 to ItemsCount do
-    begin
-        CurrentDangerous := TDangerous.Create(Items[I]);
-        Items[I].AddBehavior(CurrentDangerous);
-        CurrentName := Copy(Items[I].Name,5,1);
-        CurrentDangerous.SetNumber(StrToInt(CurrentName));
-
-        DangerousObjectsIndex := DangerousObjectsIndex + 1;
-        DangerousObjects[DangerousObjectsIndex] := CurrentDangerous;
-    end;
 end;
 
 procedure TGameMode.TurnOnWithNumber(NumberToTurn : integer);
@@ -55,18 +44,16 @@ var
     I : integer;
     AsScene : TCastleScene;
 begin   
-    for I := 0 to DangerousObjectsIndex do
+    for I := 0 to Count() - 1 do
     begin
-    if DangerousObjects[I].StageNumber <= NumberToTurn then
+    if StrToInt(RightStr(Items[I].Name, 1)) <= NumberToTurn then
         begin
-        if DangerousObjects[I].Parent.Exists = false then
-        DangerousObjects[I].Parent.Exists := true;
-        AsScene := DangerousObjects[I].Parent as TCastleScene;
+        if Items[I].Exists = false then
+        Items[I].Exists := true;
         end else
         begin
-        if DangerousObjects[I].Parent.Exists = true then
-        DangerousObjects[I].Parent.Exists := false;
-        AsScene := DangerousObjects[I].Parent as TCastleScene;
+        if Items[I].Exists = true then
+        Items[I].Exists := false;
         end;
     end;
 end;

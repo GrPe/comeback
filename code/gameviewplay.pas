@@ -10,7 +10,8 @@ interface
 uses Classes,
   CastleComponentSerialize, CastleUIControls, CastleControls,
   CastleKeysMouse, CastleViewport, CastleScene, CastleVectors,
-  PlayerManager,Collectible, GameState, CastleLog, CastleSoundEngine;
+  PlayerManager,Collectible, GameState, CastleLog, CastleSoundEngine,
+  CastleBehaviors;
 
 
 type
@@ -22,7 +23,7 @@ type
     PlayerCharacter : TCastleScene;
     Collectible : TCollectible;
     GameState : TGameMode;
-    Ocean : TCastleSound;
+    Ambient : TCastleSoundSource;
     Splash1 : TCastleSound;
   private
     PlayerManager: TPlayerManager;
@@ -60,7 +61,6 @@ begin
  { Collectible.Start};
   GameState.Start();
   GameState.TurnOnWithNumber(-1);
-  SoundEngine.Play(Ocean);
 end;
 
 procedure TViewPlay.Update(const SecondsPassed: Single; var HandleInput: Boolean);

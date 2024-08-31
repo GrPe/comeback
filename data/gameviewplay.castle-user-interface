@@ -7432,6 +7432,13 @@
               }
             ]
           }
+        ],
+        "$Behaviors" : [
+          {
+            "$$ClassName" : "TCastleSoundSource",
+            "Name" : "Ambient",
+            "Sound" : "Ocean"
+          }
         ]
       },
       "Name" : "MainViewport",

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset version="1.10" tiledversion="1.11.0" name="fibsh" tilewidth="16" tileheight="16" tilecount="10" columns="10">
- <image source="C:/Users/piotr/Downloads/fibsh.png" width="160" height="16"/>
+        <image source="castle-data:/Map_1/fibsh.png" width="160" height="16"/>
  <tile id="0">
   <animation>
    <frame tileid="0" duration="450"/>

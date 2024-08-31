@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset version="1.10" tiledversion="1.11.0" name="Water_anim" tilewidth="16" tileheight="16" tilecount="23" columns="23">
- <image source="C:/Users/piotr/Downloads/water_anim.png" width="368" height="16"/>
+        <image source="castle-data:/Map_1/water_anim.png" width="368" height="16"/>
  <tile id="0">
   <animation>
    <frame tileid="1" duration="400"/>

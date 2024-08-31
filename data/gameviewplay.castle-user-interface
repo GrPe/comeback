@@ -91,6 +91,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC2_4",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -151,6 +152,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC2_5",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -211,6 +213,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC2_2",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -271,6 +274,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC2_7",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -331,6 +335,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC2_1",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -391,6 +396,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC2_3",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -451,6 +457,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC3_6",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -511,6 +518,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC5_5",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -571,6 +579,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC4_5",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -631,6 +640,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC4_37",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -691,6 +701,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC4_0",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -751,6 +762,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC4_9",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -811,6 +823,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC4_7",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -871,6 +884,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC4_1",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -931,6 +945,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC4_48",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -991,6 +1006,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC7_2",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -1051,6 +1067,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC6_6",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -1111,6 +1128,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC3_0",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -1171,6 +1189,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC3_4",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -1231,6 +1250,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC5_8",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -1291,6 +1311,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC5_9",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -1351,6 +1372,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC5_08",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -1411,6 +1433,7 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC6_5",
+                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -2915,7 +2938,7 @@
         "Name" : "",
         "Orthographic" : {
           "$$ClassName" : "TCastleOrthographic",
-          "Height" : 2.8005529785156250E+002,
+          "Height" : 3.5365451049804688E+002,
           "OriginPersistent" : {
             "$$ClassName" : "TCastleVector2Persistent",
             "X" : 5.0000000000000000E-001,
@@ -2938,8 +2961,8 @@
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "X" : 9.3106292724609375E+002,
-          "Y" : 6.5489099121093750E+002
+          "X" : 9.2263885498046875E+002,
+          "Y" : 6.0986480712890625E+002
         }
       },
       "InternalDesignNavigationType" : 2,

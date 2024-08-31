@@ -74,7 +74,7 @@ begin
   if ElapsedSeconds > 0 then Exit();
 
   PlayerManager.MoveNext();
-  ElapsedSeconds := 0.8;
+  ElapsedSeconds := 0.4;
 end;
 
 function TViewPlay.Press(const Event: TInputPressRelease): Boolean;

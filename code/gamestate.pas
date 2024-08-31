@@ -61,7 +61,9 @@ begin
         begin
         DangerousObjects[I].Parent.Exists := true;
         end else
+        begin
         DangerousObjects[I].Parent.Exists := false;
+        end;
     end;
 end;
 

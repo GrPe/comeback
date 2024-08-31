@@ -31,6 +31,7 @@ type
         procedure StopPlayer();
         procedure HandleCollision(const CollisionDetails: TPhysicsCollisionDetails);
         procedure Update(const SecondsPassed: Single);
+        procedure Restart();
 end;
 
 
@@ -155,6 +156,13 @@ begin
     PlayerObject.TranslationXY := PlayerPath[Iterator];
 end;
 
+procedure TPlayerManager.Restart();
+begin;
+    BackToStart();
+    AutoPilot := false;
+    PathIndex := 0;
+end;
+
 procedure TPlayerManager.HandleCollision(const CollisionDetails: TPhysicsCollisionDetails);
 var 
     CollidedObject: TCastleTransform;
@@ -162,16 +170,30 @@ begin
     CollidedObject := CollisionDetails.OtherTransform();
     CastleLog.WritelnLog(CollidedObject.Name);
 
+    // Collectible 
     if CollidedObject.Name = 'Collectible' then
     begin
-        PlayerPath[PathIndex] := PlayerObject.TranslationXY;
-        PathIndex := PathIndex + 1;
+        if AutoPilot = false then
+        begin
+            PlayerPath[PathIndex] := PlayerObject.TranslationXY;
+            PathIndex := PathIndex + 1;
+        end;
         StopPlayer();
         BackToStart();
         GameMode.IncrementLevel();
         Exit();
     end;
 
+    // Bad things
+    if AutoPilot then
+    begin
+        CastleLog.WritelnLog('YOU DIED');
+        Restart();
+        GameMode.Restart();
+        Exit();
+    end;
+
+    // You shall not pass
     PathIndex := PathIndex - 1;    
     PlayerObject.TranslationXY := PlayerPath[PathIndex];
     FreeAndNil(PathSprites[PathIndex]);

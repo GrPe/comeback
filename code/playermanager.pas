@@ -34,6 +34,7 @@ type
         procedure StopPlayer();
         procedure SetSounds(SplashOne : TCastleSound; SplashTwo : TCastleSound);
         procedure PlayRandomSound();
+        procedure PlayHitSound();
         procedure HandleCollision(const CollisionDetails: TPhysicsCollisionDetails);
         procedure Update(const SecondsPassed: Single);
         procedure Restart();
@@ -154,6 +155,14 @@ begin
     SoundEngine.Play(Splash1);
 end;
 
+procedure TPlayerManager.PlayHitSound();
+var
+    RandomPitch : real;
+    I : integer;
+begin
+    SoundEngine.Play(Splash2);
+end;
+
 procedure TPlayerManager.StopPlayer();
 var 
     i: integer;
@@ -216,6 +225,7 @@ begin
         CastleLog.WritelnLog('YOU DIED');
         Restart();
         GameMode.Restart();
+        PlayHitSound();
         Exit();
     end;
 

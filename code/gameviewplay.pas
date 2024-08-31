@@ -23,6 +23,7 @@ type
     Collectible : TCollectible;
     GameState : TGameMode;
     Ocean : TCastleSound;
+    Splash1 : TCastleSound;
   private
     PlayerManager: TPlayerManager;
     ElapsedSeconds: Single;
@@ -55,6 +56,7 @@ begin
   inherited;
   PlayerManager := TPlayerManager.Create(PlayerCharacter,PlayerCharacter,MainViewport,GameState);
   PlayerManager.Start();
+  PlayerManager.SetSounds(Splash1,Splash1);
  { Collectible.Start};
   GameState.Start();
   GameState.TurnOnWithNumber(-1);

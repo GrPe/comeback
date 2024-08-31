@@ -5,7 +5,8 @@ interface
 uses Classes,
   CastleComponentSerialize, CastleUIControls, CastleControls,
   CastleKeysMouse, CastleViewport, CastleScene, CastleVectors,
-  CastleLog, sysutils, CastleTransform, GameState, CastleRenderOptions;
+  CastleLog, sysutils, CastleTransform, GameState, CastleRenderOptions,
+  CastleSoundEngine;
 
 type
     TPlayerManager = class(TCastleScene)
@@ -22,6 +23,8 @@ type
 
         PlayerBody: TCastleRigidBody;
         TimeToMove: Single;
+        Splash1 : TCastleSound;
+        Splash2 : TCastleSound;
     public
         constructor Create(AOwner: TComponent; APlayerObject: TCastleScene; AVP: TCastleViewport; AGameMode: TGameMode);
         procedure Start;
@@ -29,6 +32,8 @@ type
         procedure MoveNext();
         procedure BackToStart();
         procedure StopPlayer();
+        procedure SetSounds(SplashOne : TCastleSound; SplashTwo : TCastleSound);
+        procedure PlayRandomSound();
         procedure HandleCollision(const CollisionDetails: TPhysicsCollisionDetails);
         procedure Update(const SecondsPassed: Single);
         procedure Restart();
@@ -79,6 +84,7 @@ begin
         T := PlayerObject.TranslationXY;
         T.Y := T.Y + PlayerSpeed;
         PlayerObject.TranslationXY := T;
+        PlayRandomSound();
     end
 
     else if Events.IsKey(KeyS) then
@@ -86,6 +92,7 @@ begin
         T := PlayerObject.TranslationXY;
         T.Y := T.Y - PlayerSpeed;
         PlayerObject.TranslationXY := T;
+        PlayRandomSound();
     end
 
     else if Events.IsKey(KeyA) then
@@ -93,6 +100,7 @@ begin
         T := PlayerObject.TranslationXY;
         T.X := T.X - PlayerSpeed;
         PlayerObject.TranslationXY := T;
+        PlayRandomSound();
     end
 
     else if Events.IsKey(KeyD) then
@@ -100,6 +108,7 @@ begin
         T := PlayerObject.TranslationXY;
         T.X := T.X + PlayerSpeed;
         PlayerObject.TranslationXY := T;
+        PlayRandomSound();
     end
 
     else if Events.IsKey(KeyP) then
@@ -129,6 +138,20 @@ begin
     PathIndex := PathIndex + 1;
 
     TimeToMove := 0.3;
+end;
+
+procedure TPlayerManager.SetSounds(SplashOne : TCastleSound; SplashTwo : TCastleSound);
+begin
+    Splash1 := SplashOne;
+    Splash2 := SplashTwo;
+end;
+
+procedure TPlayerManager.PlayRandomSound();
+var
+    RandomPitch : real;
+    I : integer;
+begin
+    SoundEngine.Play(Splash1);
 end;
 
 procedure TPlayerManager.StopPlayer();

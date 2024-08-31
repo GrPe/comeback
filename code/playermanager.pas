@@ -5,7 +5,7 @@ interface
 uses Classes,
   CastleComponentSerialize, CastleUIControls, CastleControls,
   CastleKeysMouse, CastleViewport, CastleScene, CastleVectors,
-  CastleLog, sysutils, CastleTransform;
+  CastleLog, sysutils, CastleTransform, GameState;
 
 type
     TPlayerManager = class(TCastleScene)
@@ -18,11 +18,12 @@ type
         Iterator: integer;
         PathTemplate: TCastleScene;
         VP: TCastleViewport;
+        GameMode: TGameMode;
 
         PlayerBody: TCastleRigidBody;
         TimeToMove: Single;
     public
-        constructor Create(AOwner: TComponent; APlayerObject: TCastleScene; AVP: TCastleViewport);
+        constructor Create(AOwner: TComponent; APlayerObject: TCastleScene; AVP: TCastleViewport; AGameMode: TGameMode);
         procedure Start;
         procedure HandleInput(const Events: TInputPressRelease);
         procedure MoveNext();
@@ -35,7 +36,7 @@ end;
 
 implementation
 
-constructor TPlayerManager.Create(AOwner: TComponent; APlayerObject: TCastleScene; AVP: TCastleViewport);
+constructor TPlayerManager.Create(AOwner: TComponent; APlayerObject: TCastleScene; AVP: TCastleViewport; AGameMode: TGameMode);
 begin
 inherited Create(AOwner);
     PlayerObject := APlayerObject;
@@ -43,6 +44,7 @@ inherited Create(AOwner);
     AutoPilot := false;
     Iterator :=0;
     VP:= AVP;
+    GameMode := AGameMode;
 
     PathTemplate := TCastleScene.Create(Self);
     PathTemplate.Load('castle-data:/Ship/stateczek.png');
@@ -157,11 +159,18 @@ procedure TPlayerManager.HandleCollision(const CollisionDetails: TPhysicsCollisi
 var 
     CollidedObject: TCastleTransform;
 begin
-    // magic of collisions
     CollidedObject := CollisionDetails.OtherTransform();
-
     CastleLog.WritelnLog(CollidedObject.Name);
 
+    if CollidedObject.Name = 'Collectible' then
+    begin
+        PlayerPath[PathIndex] := PlayerObject.TranslationXY;
+        PathIndex := PathIndex + 1;
+        StopPlayer();
+        BackToStart();
+        GameMode.IncrementLevel();
+        Exit();
+    end;
 
     PathIndex := PathIndex - 1;    
     PlayerObject.TranslationXY := PlayerPath[PathIndex];

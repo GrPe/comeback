@@ -10,6 +10,8 @@ uses Classes,
 
 type
     TPlayerManager = class(TCastleScene)
+    published
+        CollectibleSound: TCastleSound;
     private
         PlayerObject: TCastleScene;
         PlayerPath: array[0..10000] of TVector2;
@@ -25,6 +27,8 @@ type
         TimeToMove: Single;
         Splash1 : TCastleSound;
         Splash2 : TCastleSound;
+        PopSound : TCastleSound;
+
     public
         constructor Create(AOwner: TComponent; APlayerObject: TCastleScene; AVP: TCastleViewport; AGameMode: TGameMode);
         procedure Start;
@@ -32,9 +36,10 @@ type
         procedure MoveNext();
         procedure BackToStart();
         procedure StopPlayer();
-        procedure SetSounds(SplashOne : TCastleSound; SplashTwo : TCastleSound);
+        procedure SetSounds(SplashOne : TCastleSound; SplashTwo : TCastleSound; InPopSound : TCastleSound);
         procedure PlayRandomSound();
         procedure PlayHitSound();
+        procedure PlayCollectibleSound();
         procedure HandleCollision(const CollisionDetails: TPhysicsCollisionDetails);
         procedure Update(const SecondsPassed: Single);
         procedure Restart();
@@ -141,10 +146,11 @@ begin
     TimeToMove := 0.3;
 end;
 
-procedure TPlayerManager.SetSounds(SplashOne : TCastleSound; SplashTwo : TCastleSound);
+procedure TPlayerManager.SetSounds(SplashOne : TCastleSound; SplashTwo : TCastleSound; InPopSound : TCastleSound);
 begin
     Splash1 := SplashOne;
     Splash2 := SplashTwo;
+    PopSound := InPopSound;
 end;
 
 procedure TPlayerManager.PlayRandomSound();
@@ -162,6 +168,12 @@ var
 begin
     SoundEngine.Play(Splash2);
 end;
+
+procedure TPlayerManager.PlayCollectibleSound();
+begin
+    SoundEngine.Play(PopSound);
+end;
+   
 
 procedure TPlayerManager.StopPlayer();
 var 
@@ -213,6 +225,7 @@ begin
             PlayerPath[PathIndex] := PlayerObject.TranslationXY;
             PathIndex := PathIndex + 1;
         end;
+        PlayCollectibleSound();
         StopPlayer();
         BackToStart();
         GameMode.IncrementLevel();

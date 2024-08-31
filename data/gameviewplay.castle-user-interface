@@ -69,6 +69,12 @@
             "$$ClassName" : "TCastleSound",
             "Name" : "Splash2",
             "Url" : "castle-data:/sounds/364691__alegemaate__wood-hit.wav"
+          },
+          {
+            "$$ClassName" : "TCastleSound",
+            "Name" : "CollectibleSound",
+            "Url" : "castle-data:/sounds/509247__tripjazz__opening-can.wav",
+            "Volume" : 5.0000000000000000E-001
           }
         ],
         "$Children" : [
@@ -2112,7 +2118,7 @@
                 },
                 "ExposeTransforms" : [
                 ],
-                "Name" : "MC5_996",
+                "Name" : "MC5_696",
                 "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
@@ -2173,7 +2179,7 @@
                 },
                 "ExposeTransforms" : [
                 ],
-                "Name" : "MC5_997",
+                "Name" : "MC5_597",
                 "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
@@ -7827,7 +7833,7 @@
         "Name" : "",
         "Orthographic" : {
           "$$ClassName" : "TCastleOrthographic",
-          "Height" : 4.6173315429687500E+002,
+          "Height" : 2.4509692382812500E+002,
           "OriginPersistent" : {
             "$$ClassName" : "TCastleVector2Persistent",
             "X" : 5.0000000000000000E-001,
@@ -7850,8 +7856,8 @@
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "X" : 7.7384454345703125E+002,
-          "Y" : 5.6829895019531250E+002
+          "X" : 9.3060351562500000E+002,
+          "Y" : 5.9649493408203125E+002
         }
       },
       "InternalDesignNavigationType" : 2,

@@ -25,6 +25,9 @@ type
     GameState : TGameMode;
     Ambient : TCastleSoundSource;
     Splash1 : TCastleSound;
+    Splash2 : TCastleSound;
+    CollectibleSound : TCastleSound;
+
   private
     PlayerManager: TPlayerManager;
     ElapsedSeconds: Single;
@@ -57,7 +60,7 @@ begin
   inherited;
   PlayerManager := TPlayerManager.Create(PlayerCharacter,PlayerCharacter,MainViewport,GameState);
   PlayerManager.Start();
-  PlayerManager.SetSounds(Splash1,Splash1);
+  PlayerManager.SetSounds(Splash1,Splash2,CollectibleSound);
  { Collectible.Start};
   GameState.Start();
   GameState.TurnOnWithNumber(-1);

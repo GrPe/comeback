@@ -52,6 +52,15 @@
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent"
         },
+        "$NonVisualComponents" : [
+          {
+            "$$ClassName" : "TCastleSound",
+            "Name" : "Ocean",
+            "Stream" : true,
+            "Url" : "castle-data:/sounds/433016__derjuli__ocean.wav",
+            "Volume" : 5.0000000745058060E-002
+          }
+        ],
         "$Children" : [
           {
             "$$ClassName" : "TCastleTransform",
@@ -81,70 +90,7 @@
                 },
                 "ExposeTransforms" : [
                 ],
-                "Name" : "MC1_4",
-                "ProcessEvents" : true,
-                "RenderLayer" : "rlFront",
-                "RenderOptions" : {
-                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
-                  "MagnificationFilter" : "magNearest",
-                  "MinificationFilter" : "minNearest",
-                  "WireframeColorPersistent" : {
-                    "$$ClassName" : "TCastleColorRGBPersistent"
-                  }
-                },
-                "RotationPersistent" : {
-                  "$$ClassName" : "TCastleVector4RotationPersistent",
-                  "Z" : 1.0000000000000000E+000
-                },
-                "ScaleOrientationPersistent" : {
-                  "$$ClassName" : "TCastleVector4Persistent"
-                },
-                "ScalePersistent" : {
-                  "$$ClassName" : "TCastleVector3Persistent"
-                },
-                "TranslationPersistent" : {
-                  "$$ClassName" : "TCastleVector3Persistent",
-                  "X" : 1.0080000000000000E+003,
-                  "Y" : 7.0400000000000000E+002
-                },
-                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
-                "$Behaviors" : [
-                  {
-                    "$$ClassName" : "TCastleBoxCollider",
-                    "Mode2D" : true,
-                    "Name" : "BoxCollider3"
-                  },
-                  {
-                    "$$ClassName" : "TCastleRigidBody",
-                    "AngularVelocityPersistent" : {
-                      "$$ClassName" : "TCastleVector3Persistent"
-                    },
-                    "Gravity" : false,
-                    "LinearVelocityPersistent" : {
-                      "$$ClassName" : "TCastleVector3Persistent"
-                    },
-                    "LockRotation" : [
-                      0,
-                      1
-                    ],
-                    "LockTranslation" : [
-                      2
-                    ],
-                    "Name" : "RigidBody3"
-                  }
-                ]
-              },
-              {
-                "$$ClassName" : "TCastleScene",
-                "AutoAnimation" : "IdleMacki",
-                "CenterPersistent" : {
-                  "$$ClassName" : "TCastleVector3Persistent"
-                },
-                "ExposeTransforms" : [
-                ],
                 "Name" : "MC2_4",
-                "PreciseCollisions" : true,
-                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -204,8 +150,307 @@
                 },
                 "ExposeTransforms" : [
                 ],
+                "Name" : "MC2_5",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 1.0080000000000000E+003,
+                  "Y" : 7.0322698974609375E+002
+                },
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider9"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody9"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "IdleMacki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "MC2_2",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 1.0225883789062500E+003,
+                  "Y" : 7.2024334716796875E+002
+                },
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider21"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody21"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "IdleMacki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "MC2_7",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 1.0396082763671875E+003,
+                  "Y" : 7.2024334716796875E+002
+                },
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider22"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody22"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "IdleMacki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "MC2_1",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 1.0558176269531250E+003,
+                  "Y" : 7.3645269775390625E+002
+                },
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider25"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody25"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "IdleMacki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "MC2_3",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 1.0716218261718750E+003,
+                  "Y" : 7.2024676513671875E+002
+                },
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider23"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody23"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "IdleMacki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
                 "Name" : "MC3_6",
-                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -266,7 +511,6 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC5_5",
-                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -327,7 +571,6 @@
                 "ExposeTransforms" : [
                 ],
                 "Name" : "MC4_5",
-                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -349,8 +592,8 @@
                 },
                 "TranslationPersistent" : {
                   "$$ClassName" : "TCastleVector3Persistent",
-                  "X" : 9.9200000000000000E+002,
-                  "Y" : 6.2400000000000000E+002
+                  "X" : 9.2841577148437500E+002,
+                  "Y" : 6.0615618896484375E+002
                 },
                 "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
                 "$Behaviors" : [
@@ -387,8 +630,787 @@
                 },
                 "ExposeTransforms" : [
                 ],
+                "Name" : "MC4_37",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.1228222656250000E+002,
+                  "Y" : 6.2265637207031250E+002
+                },
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider35"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody35"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "IdleMacki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "MC4_0",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.4650268554687500E+002,
+                  "Y" : 6.2086492919921875E+002
+                },
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider26"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody26"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "IdleMacki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "MC4_9",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.4650268554687500E+002,
+                  "Y" : 6.0619592285156250E+002
+                },
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider27"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody27"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "IdleMacki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "MC4_7",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.9200000000000000E+002,
+                  "Y" : 6.2400000000000000E+002
+                },
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider19"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody19"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "IdleMacki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "MC4_1",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.3064416503906250E+002,
+                  "Y" : 7.0147857666015625E+002
+                },
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider18"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody18"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "IdleMacki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "MC4_48",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 8.9538800048828125E+002,
+                  "Y" : 7.0147857666015625E+002
+                },
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider38"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody38"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "IdleMacki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "MC7_2",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 8.9538800048828125E+002,
+                  "Y" : 6.8517730712890625E+002
+                },
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider39"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody39"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "IdleMacki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "MC6_6",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 8.4746783447265625E+002,
+                  "Y" : 6.4083990478515625E+002
+                },
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider43"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody43"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "IdleMacki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "MC3_0",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 8.4746783447265625E+002,
+                  "Y" : 5.9381542968750000E+002
+                },
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider44"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody44"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "IdleMacki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "MC3_4",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 8.9628375244140625E+002,
+                  "Y" : 5.9381542968750000E+002
+                },
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider45"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody45"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "IdleMacki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "MC5_8",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 8.9628375244140625E+002,
+                  "Y" : 5.7774548339843750E+002
+                },
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider46"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody46"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "IdleMacki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "MC5_9",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.3064416503906250E+002,
+                  "Y" : 6.7326385498046875E+002
+                },
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider34"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody34"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "IdleMacki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "MC5_08",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.7765130615234375E+002,
+                  "Y" : 6.7326385498046875E+002
+                },
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider47"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody47"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "AutoAnimation" : "IdleMacki",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
                 "Name" : "MC6_5",
-                "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
                   "$$ClassName" : "TCastleScene.TSceneRenderOptions",
@@ -447,65 +1469,6 @@
                 },
                 "ExposeTransforms" : [
                 ],
-                "Name" : "PR1_0",
-                "RenderLayer" : "rlFront",
-                "RenderOptions" : {
-                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
-                  "MagnificationFilter" : "magNearest",
-                  "MinificationFilter" : "minNearest",
-                  "WireframeColorPersistent" : {
-                    "$$ClassName" : "TCastleColorRGBPersistent"
-                  }
-                },
-                "RotationPersistent" : {
-                  "$$ClassName" : "TCastleVector4RotationPersistent",
-                  "Z" : 1.0000000000000000E+000
-                },
-                "ScaleOrientationPersistent" : {
-                  "$$ClassName" : "TCastleVector4Persistent"
-                },
-                "ScalePersistent" : {
-                  "$$ClassName" : "TCastleVector3Persistent"
-                },
-                "TranslationPersistent" : {
-                  "$$ClassName" : "TCastleVector3Persistent",
-                  "X" : 9.6000000000000000E+002,
-                  "Y" : 6.4000000000000000E+002
-                },
-                "Url" : "castle-data:/zlole/piratek.png",
-                "$Behaviors" : [
-                  {
-                    "$$ClassName" : "TCastleBoxCollider",
-                    "Mode2D" : true,
-                    "Name" : "BoxCollider4"
-                  },
-                  {
-                    "$$ClassName" : "TCastleRigidBody",
-                    "AngularVelocityPersistent" : {
-                      "$$ClassName" : "TCastleVector3Persistent"
-                    },
-                    "Gravity" : false,
-                    "LinearVelocityPersistent" : {
-                      "$$ClassName" : "TCastleVector3Persistent"
-                    },
-                    "LockRotation" : [
-                      0,
-                      1
-                    ],
-                    "LockTranslation" : [
-                      2
-                    ],
-                    "Name" : "RigidBody4"
-                  }
-                ]
-              },
-              {
-                "$$ClassName" : "TCastleScene",
-                "CenterPersistent" : {
-                  "$$ClassName" : "TCastleVector3Persistent"
-                },
-                "ExposeTransforms" : [
-                ],
                 "Name" : "PR2_1",
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
@@ -528,8 +1491,8 @@
                 },
                 "TranslationPersistent" : {
                   "$$ClassName" : "TCastleVector3Persistent",
-                  "X" : 9.6000000000000000E+002,
-                  "Y" : 6.5613000488281250E+002
+                  "X" : 8.0000000000000000E+002,
+                  "Y" : 6.5600000000000000E+002
                 },
                 "Url" : "castle-data:/zlole/piratek.png",
                 "$Behaviors" : [
@@ -555,6 +1518,1186 @@
                       2
                     ],
                     "Name" : "RigidBody10"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR2_2",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 8.7942578125000000E+002,
+                  "Y" : 6.5600000000000000E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider28"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody28"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR9_2",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 8.7942578125000000E+002,
+                  "Y" : 6.7230126953125000E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider36"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody36"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR2_0",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 8.4758148193359375E+002,
+                  "Y" : 7.0300830078125000E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider40"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody40"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR6_8",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 8.4758148193359375E+002,
+                  "Y" : 7.1928509521484375E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider41"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody41"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR5_9",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 8.4758148193359375E+002,
+                  "Y" : 7.3795544433593750E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider42"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody42"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR2_9",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.2908770751953125E+002,
+                  "Y" : 7.3674804687500000E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider37"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody37"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR2_3",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 8.7942578125000000E+002,
+                  "Y" : 6.2520227050781250E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider29"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody29"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR2_4",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.7546612548828125E+002,
+                  "Y" : 5.9237835693359375E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider30"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody30"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR2_5",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 1.0249614257812500E+003,
+                  "Y" : 5.6119622802734375E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider31"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody31"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR2_6",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.4270080566406250E+002,
+                  "Y" : 5.6119622802734375E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider32"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody32"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR2_7",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.9080963134765625E+002,
+                  "Y" : 5.6119622802734375E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider33"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody33"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR3_1",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 1.0246965332031250E+003,
+                  "Y" : 6.3788226318359375E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider12"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody12"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR3_2",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.5975799560546875E+002,
+                  "Y" : 6.3788226318359375E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider48"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody48"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR4_1",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 1.0410028076171875E+003,
+                  "Y" : 6.7215728759765625E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider13"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody13"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR5_6",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.4432519531250000E+002,
+                  "Y" : 6.5481469726562500E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider14"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody14"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR5_2",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.6044787597656250E+002,
+                  "Y" : 6.5513464355468750E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider20"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody20"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR6_1",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.6288806152343750E+002,
+                  "Y" : 7.0173651123046875E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider15"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody15"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR7_1",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.1218243408203125E+002,
+                  "Y" : 6.7296490478515625E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider16"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody16"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR8_1",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 9.1218243408203125E+002,
+                  "Y" : 6.0569610595703125E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider17"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody17"
+                  }
+                ]
+              },
+              {
+                "$$ClassName" : "TCastleScene",
+                "CenterPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "ExposeTransforms" : [
+                ],
+                "Name" : "PR8_9",
+                "RenderLayer" : "rlFront",
+                "RenderOptions" : {
+                  "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+                  "MagnificationFilter" : "magNearest",
+                  "MinificationFilter" : "minNearest",
+                  "WireframeColorPersistent" : {
+                    "$$ClassName" : "TCastleColorRGBPersistent"
+                  }
+                },
+                "RotationPersistent" : {
+                  "$$ClassName" : "TCastleVector4RotationPersistent",
+                  "Z" : 1.0000000000000000E+000
+                },
+                "ScaleOrientationPersistent" : {
+                  "$$ClassName" : "TCastleVector4Persistent"
+                },
+                "ScalePersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent"
+                },
+                "TranslationPersistent" : {
+                  "$$ClassName" : "TCastleVector3Persistent",
+                  "X" : 1.0889873046875000E+003,
+                  "Y" : 7.0441479492187500E+002
+                },
+                "Url" : "castle-data:/zlole/piratek.png",
+                "$Behaviors" : [
+                  {
+                    "$$ClassName" : "TCastleBoxCollider",
+                    "Mode2D" : true,
+                    "Name" : "BoxCollider24"
+                  },
+                  {
+                    "$$ClassName" : "TCastleRigidBody",
+                    "AngularVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "Gravity" : false,
+                    "LinearVelocityPersistent" : {
+                      "$$ClassName" : "TCastleVector3Persistent"
+                    },
+                    "LockRotation" : [
+                      0,
+                      1
+                    ],
+                    "LockTranslation" : [
+                      2
+                    ],
+                    "Name" : "RigidBody24"
                   }
                 ]
               }
@@ -772,7 +2915,7 @@
         "Name" : "",
         "Orthographic" : {
           "$$ClassName" : "TCastleOrthographic",
-          "Height" : 2.2928988647460938E+002,
+          "Height" : 2.8005529785156250E+002,
           "OriginPersistent" : {
             "$$ClassName" : "TCastleVector2Persistent",
             "X" : 5.0000000000000000E-001,
@@ -795,8 +2938,8 @@
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "X" : 9.9610229492187500E+002,
-          "Y" : 6.9345831298828125E+002
+          "X" : 9.3106292724609375E+002,
+          "Y" : 6.5489099121093750E+002
         }
       },
       "InternalDesignNavigationType" : 2,

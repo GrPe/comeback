@@ -52,7 +52,7 @@ end;
 procedure TViewPlay.Start;
 begin
   inherited;
-  PlayerManager := TPlayerManager.Create(PlayerCharacter,PlayerCharacter,MainViewport);
+  PlayerManager := TPlayerManager.Create(PlayerCharacter,PlayerCharacter,MainViewport,GameState);
   PlayerManager.Start();
  { Collectible.Start};
   GameState.Start();

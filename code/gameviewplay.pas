@@ -21,7 +21,7 @@ type
     MainViewport: TCastleViewport;
     PlayerCharacter : TCastleScene;
     Collectible : TCollectible;
-    GameState : TEnemyStateAssigner;
+    GameState : TGameMode;
   private
     PlayerManager: TPlayerManager;
     ElapsedSeconds: Single;
@@ -56,6 +56,7 @@ begin
   PlayerManager.Start();
  { Collectible.Start};
   GameState.Start();
+  GameState.TurnOnWithNumber(-1);
 end;
 
 procedure TViewPlay.Update(const SecondsPassed: Single; var HandleInput: Boolean);

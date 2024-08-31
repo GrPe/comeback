@@ -5,22 +5,28 @@ uses Classes,
 CastleScene, CastleTransform, CastleLog, Dangerous, SysUtils;
 
 type
-TEnemyStateAssigner = class(TCastleScene)
+TGameMode = class(TCastleScene)
 
 strict private
+    DangerousObjects: array[0..1000] of TDangerous;
+    DangerousObjectsIndex : integer;
 
+    CurrentLevelIndex : integer;
 public
     constructor Create(AOwner: TComponent); override;
     procedure Start;
+    procedure IncrementLevel();
+    procedure TurnOnWithNumber(NumberToTurn : integer);
+    procedure Restart();
 end;    
 
 implementation
-constructor TEnemyStateAssigner.Create(AOwner: TComponent);
+constructor TGameMode.Create(AOwner: TComponent);
 begin
     inherited
 end;
 
-procedure TEnemyStateAssigner.Start;
+procedure TGameMode.Start;
 var 
     I : integer;
     ItemsCount : integer;
@@ -30,6 +36,8 @@ var
 
 begin
     ItemsCount := Count() - 1;
+    DangerousObjectsIndex := -1;
+    CurrentLevelIndex := -1;
 
     for I := 0 to ItemsCount do
     begin
@@ -37,8 +45,36 @@ begin
         Items[I].AddBehavior(CurrentDangerous);
         CurrentName := Copy(Items[I].Name,5,1);
         CurrentDangerous.SetNumber(StrToInt(CurrentName));
+
+        DangerousObjectsIndex := DangerousObjectsIndex + 1;
+        DangerousObjects[DangerousObjectsIndex] := CurrentDangerous;
     end;
 end;
 
+procedure TGameMode.TurnOnWithNumber(NumberToTurn : integer);
+var 
+    I : integer;
+begin   
+    for I := 0 to DangerousObjectsIndex do
+    begin
+    if DangerousObjects[I].StageNumber <= NumberToTurn then
+        begin
+        DangerousObjects[I].Parent.Exists := true;
+        end else
+        DangerousObjects[I].Parent.Exists := false;
+    end;
+end;
+
+procedure TGameMode.IncrementLevel();
+begin
+    CurrentLevelIndex := CurrentLevelIndex + 1;
+    TurnOnWithNumber(CurrentLevelIndex);
+end;
+
+procedure TGameMode.Restart();
+begin
+    CurrentLevelIndex := -1;
+    TurnOnWithNumber(CurrentLevelIndex);
+end;
 
 end.

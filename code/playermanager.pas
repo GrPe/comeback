@@ -5,7 +5,7 @@ interface
 uses Classes,
   CastleComponentSerialize, CastleUIControls, CastleControls,
   CastleKeysMouse, CastleViewport, CastleScene, CastleVectors,
-  CastleLog, sysutils, CastleTransform, GameState;
+  CastleLog, sysutils, CastleTransform, GameState, CastleRenderOptions;
 
 type
     TPlayerManager = class(TCastleScene)
@@ -48,7 +48,7 @@ inherited Create(AOwner);
     GameMode := AGameMode;
 
     PathTemplate := TCastleScene.Create(Self);
-    PathTemplate.Load('castle-data:/Ship/stateczek.png');
+    PathTemplate.Load('castle-data:/Ship/low_quality_dot.png');
 end;
 
 procedure TPlayerManager.Start;
@@ -120,6 +120,9 @@ begin
     PathInstance.Translation := Vector3(0, 0, 2);
     PathInstance.Scale := Vector3(1, 1, 1);
     PathInstance.TranslationXY := PlayerPath[PathIndex];
+    PathInstance.RenderOptions.MagnificationFilter := magNearest;
+    PathInstance.RenderOptions.MinificationFilter := minNearest;
+    PathInstance.RenderLayer := rlFront;
     VP.Items.Add(PathInstance);
     PathSprites[PathIndex] := PathInstance;
 

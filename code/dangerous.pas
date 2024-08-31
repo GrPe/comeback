@@ -12,6 +12,7 @@ public
 public
     constructor Create(AOwner: TComponent); override;
     procedure SetNumber(CurrentInt : integer);
+    procedure Update(const SecondsPassed: Single; var RemoveMe: TRemoveType); override;
 end;    
 
 implementation
@@ -19,6 +20,10 @@ implementation
 constructor TDangerous.Create(AOwner: TComponent);
 begin
     inherited;
+end;
+
+procedure TDangerous.Update(const SecondsPassed: Single; var RemoveMe: TRemoveType); 
+begin
 end;
 
 procedure TDangerous.SetNumber(CurrentInt: integer);

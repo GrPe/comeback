@@ -1,0 +1,30 @@
+{
+  "$$ClassName" : "TCastleScene",
+  "CenterPersistent" : {
+    "$$ClassName" : "TCastleVector3Persistent"
+  },
+  "ExposeTransforms" : [
+  ],
+  "Name" : "PlayerDot",
+  "RenderOptions" : {
+    "$$ClassName" : "TCastleScene.TSceneRenderOptions",
+    "MagnificationFilter" : "magNearest",
+    "MinificationFilter" : "minNearest",
+    "WireframeColorPersistent" : {
+      "$$ClassName" : "TCastleColorRGBPersistent"
+    }
+  },
+  "RotationPersistent" : {
+    "$$ClassName" : "TCastleVector4RotationPersistent"
+  },
+  "ScaleOrientationPersistent" : {
+    "$$ClassName" : "TCastleVector4Persistent"
+  },
+  "ScalePersistent" : {
+    "$$ClassName" : "TCastleVector3Persistent"
+  },
+  "TranslationPersistent" : {
+    "$$ClassName" : "TCastleVector3Persistent"
+  },
+  "Url" : "castle-data:/Ship/low_quality_dot.png"
+}

@@ -30,7 +30,6 @@ procedure TGameMode.Start;
 var 
     I : integer;
     ItemsCount : integer;
-    LevelNumber : integer;
     CurrentDangerous : TDangerous;
     CurrentName : string;
 
@@ -54,15 +53,20 @@ end;
 procedure TGameMode.TurnOnWithNumber(NumberToTurn : integer);
 var 
     I : integer;
+    AsScene : TCastleScene;
 begin   
     for I := 0 to DangerousObjectsIndex do
     begin
     if DangerousObjects[I].StageNumber <= NumberToTurn then
         begin
+        if DangerousObjects[I].Parent.Exists = false then
         DangerousObjects[I].Parent.Exists := true;
+        AsScene := DangerousObjects[I].Parent as TCastleScene;
         end else
         begin
+        if DangerousObjects[I].Parent.Exists = true then
         DangerousObjects[I].Parent.Exists := false;
+        AsScene := DangerousObjects[I].Parent as TCastleScene;
         end;
     end;
 end;

@@ -75,13 +75,13 @@
             "$Children" : [
               {
                 "$$ClassName" : "TCastleScene",
-                "AutoAnimation" : "Macki",
+                "AutoAnimation" : "IdleMacki",
                 "CenterPersistent" : {
                   "$$ClassName" : "TCastleVector3Persistent"
                 },
                 "ExposeTransforms" : [
                 ],
-                "Name" : "MC1_1",
+                "Name" : "MC1_4",
                 "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
@@ -107,7 +107,7 @@
                   "X" : 1.0080000000000000E+003,
                   "Y" : 7.0400000000000000E+002
                 },
-                "Url" : "castle-data:/zlole/macki2.castle-sprite-sheet",
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
                 "$Behaviors" : [
                   {
                     "$$ClassName" : "TCastleBoxCollider",
@@ -136,13 +136,14 @@
               },
               {
                 "$$ClassName" : "TCastleScene",
-                "AutoAnimation" : "Macki",
+                "AutoAnimation" : "IdleMacki",
                 "CenterPersistent" : {
                   "$$ClassName" : "TCastleVector3Persistent"
                 },
                 "ExposeTransforms" : [
                 ],
-                "Name" : "MC2_1",
+                "Name" : "MC2_4",
+                "PreciseCollisions" : true,
                 "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
@@ -168,7 +169,7 @@
                   "X" : 1.0080000000000000E+003,
                   "Y" : 6.8800000000000000E+002
                 },
-                "Url" : "castle-data:/zlole/macki2.castle-sprite-sheet",
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
                 "$Behaviors" : [
                   {
                     "$$ClassName" : "TCastleBoxCollider",
@@ -197,13 +198,13 @@
               },
               {
                 "$$ClassName" : "TCastleScene",
-                "AutoAnimation" : "Macki",
+                "AutoAnimation" : "IdleMacki",
                 "CenterPersistent" : {
                   "$$ClassName" : "TCastleVector3Persistent"
                 },
                 "ExposeTransforms" : [
                 ],
-                "Name" : "MC3_1",
+                "Name" : "MC3_6",
                 "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
@@ -229,12 +230,12 @@
                   "X" : 1.0080000000000000E+003,
                   "Y" : 6.7200000000000000E+002
                 },
-                "Url" : "castle-data:/zlole/macki2.castle-sprite-sheet",
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
                 "$Behaviors" : [
                   {
                     "$$ClassName" : "TCastleBoxCollider",
                     "Mode2D" : true,
-                    "Name" : "BoxCollider9"
+                    "Name" : "BoxCollider11"
                   },
                   {
                     "$$ClassName" : "TCastleRigidBody",
@@ -252,19 +253,19 @@
                     "LockTranslation" : [
                       2
                     ],
-                    "Name" : "RigidBody9"
+                    "Name" : "RigidBody11"
                   }
                 ]
               },
               {
                 "$$ClassName" : "TCastleScene",
-                "AutoAnimation" : "Macki",
+                "AutoAnimation" : "IdleMacki",
                 "CenterPersistent" : {
                   "$$ClassName" : "TCastleVector3Persistent"
                 },
                 "ExposeTransforms" : [
                 ],
-                "Name" : "MC5_2",
+                "Name" : "MC5_5",
                 "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
@@ -290,7 +291,7 @@
                   "X" : 1.0240000000000000E+003,
                   "Y" : 6.2400000000000000E+002
                 },
-                "Url" : "castle-data:/zlole/macki2.castle-sprite-sheet",
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
                 "$Behaviors" : [
                   {
                     "$$ClassName" : "TCastleBoxCollider",
@@ -319,13 +320,13 @@
               },
               {
                 "$$ClassName" : "TCastleScene",
-                "AutoAnimation" : "Macki",
+                "AutoAnimation" : "IdleMacki",
                 "CenterPersistent" : {
                   "$$ClassName" : "TCastleVector3Persistent"
                 },
                 "ExposeTransforms" : [
                 ],
-                "Name" : "MC4_4",
+                "Name" : "MC4_5",
                 "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
@@ -348,10 +349,10 @@
                 },
                 "TranslationPersistent" : {
                   "$$ClassName" : "TCastleVector3Persistent",
-                  "X" : 1.0400000000000000E+003,
+                  "X" : 9.9200000000000000E+002,
                   "Y" : 6.2400000000000000E+002
                 },
-                "Url" : "castle-data:/zlole/macki2.castle-sprite-sheet",
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
                 "$Behaviors" : [
                   {
                     "$$ClassName" : "TCastleBoxCollider",
@@ -380,13 +381,13 @@
               },
               {
                 "$$ClassName" : "TCastleScene",
-                "AutoAnimation" : "Macki",
+                "AutoAnimation" : "IdleMacki",
                 "CenterPersistent" : {
                   "$$ClassName" : "TCastleVector3Persistent"
                 },
                 "ExposeTransforms" : [
                 ],
-                "Name" : "MC6_3",
+                "Name" : "MC6_5",
                 "ProcessEvents" : true,
                 "RenderLayer" : "rlFront",
                 "RenderOptions" : {
@@ -412,7 +413,7 @@
                   "X" : 1.0080000000000000E+003,
                   "Y" : 6.2400000000000000E+002
                 },
-                "Url" : "castle-data:/zlole/macki2.castle-sprite-sheet",
+                "Url" : "castle-data:/zlole/IdleMacki.castle-sprite-sheet",
                 "$Behaviors" : [
                   {
                     "$$ClassName" : "TCastleBoxCollider",
@@ -468,7 +469,7 @@
                 },
                 "TranslationPersistent" : {
                   "$$ClassName" : "TCastleVector3Persistent",
-                  "X" : 9.9200000000000000E+002,
+                  "X" : 9.6000000000000000E+002,
                   "Y" : 6.4000000000000000E+002
                 },
                 "Url" : "castle-data:/zlole/piratek.png",
@@ -527,8 +528,8 @@
                 },
                 "TranslationPersistent" : {
                   "$$ClassName" : "TCastleVector3Persistent",
-                  "X" : 9.9200000000000000E+002,
-                  "Y" : 6.5613348388671875E+002
+                  "X" : 9.6000000000000000E+002,
+                  "Y" : 6.5613000488281250E+002
                 },
                 "Url" : "castle-data:/zlole/piratek.png",
                 "$Behaviors" : [
@@ -700,7 +701,7 @@
             },
             "TranslationPersistent" : {
               "$$ClassName" : "TCastleVector3Persistent",
-              "X" : 9.4400000000000000E+002,
+              "X" : 9.1200000000000000E+002,
               "Y" : 6.4000000000000000E+002
             },
             "Url" : "castle-data:/collectible/idleAnim.castle-sprite-sheet",
@@ -748,7 +749,9 @@
               "$$ClassName" : "TCastleVector3Persistent"
             },
             "TranslationPersistent" : {
-              "$$ClassName" : "TCastleVector3Persistent"
+              "$$ClassName" : "TCastleVector3Persistent",
+              "X" : -8.0000000000000000E+000,
+              "Y" : 8.0000000000000000E+000
             },
             "Url" : "castle-data:/Map_1/Map_1_Test.tmx"
           }
@@ -769,7 +772,7 @@
         "Name" : "",
         "Orthographic" : {
           "$$ClassName" : "TCastleOrthographic",
-          "Height" : 4.4659573364257812E+002,
+          "Height" : 2.2928988647460938E+002,
           "OriginPersistent" : {
             "$$ClassName" : "TCastleVector2Persistent",
             "X" : 5.0000000000000000E-001,
@@ -792,8 +795,8 @@
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "X" : 1.0115798339843750E+003,
-          "Y" : 6.3277697753906250E+002
+          "X" : 9.9610229492187500E+002,
+          "Y" : 6.9345831298828125E+002
         }
       },
       "InternalDesignNavigationType" : 2,

@@ -91,6 +91,7 @@
           "$$ClassName" : "TCastleButton",
           "AutoSize" : false,
           "AutoSizeHeight" : false,
+          "AutoSizeWidth" : false,
           "Border" : {
             "$$ClassName" : "TBorder"
           },
@@ -216,8 +217,8 @@
           "OutlineColorPersistent" : {
             "$$ClassName" : "TCastleColorPersistent"
           },
-          "PaddingHorizontal" : 3.0000000000000000E+001,
-          "PaddingVertical" : 3.0000000000000000E+001,
+          "PaddingHorizontal" : 0.0000000000000000E+000,
+          "PaddingVertical" : 0.0000000000000000E+000,
           "TintDisabledPersistent" : {
             "$$ClassName" : "TCastleColorPersistent"
           },
@@ -242,6 +243,7 @@
           "$$ClassName" : "TCastleButton",
           "AutoSize" : false,
           "AutoSizeHeight" : false,
+          "AutoSizeWidth" : false,
           "Border" : {
             "$$ClassName" : "TBorder"
           },
@@ -370,8 +372,8 @@
           "OutlineColorPersistent" : {
             "$$ClassName" : "TCastleColorPersistent"
           },
-          "PaddingHorizontal" : 3.0000000000000000E+001,
-          "PaddingVertical" : 3.0000000000000000E+001,
+          "PaddingHorizontal" : 0.0000000000000000E+000,
+          "PaddingVertical" : 0.0000000000000000E+000,
           "TintDisabledPersistent" : {
             "$$ClassName" : "TCastleColorPersistent"
           },

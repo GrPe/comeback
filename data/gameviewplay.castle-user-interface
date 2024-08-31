@@ -769,7 +769,7 @@
         "Name" : "",
         "Orthographic" : {
           "$$ClassName" : "TCastleOrthographic",
-          "Height" : 3.0950897216796875E+002,
+          "Height" : 4.4659573364257812E+002,
           "OriginPersistent" : {
             "$$ClassName" : "TCastleVector2Persistent",
             "X" : 5.0000000000000000E-001,
@@ -792,8 +792,8 @@
         },
         "TranslationPersistent" : {
           "$$ClassName" : "TCastleVector3Persistent",
-          "X" : 1.0237057495117188E+003,
-          "Y" : 6.5382775878906250E+002
+          "X" : 1.0115798339843750E+003,
+          "Y" : 6.3277697753906250E+002
         }
       },
       "InternalDesignNavigationType" : 2,
